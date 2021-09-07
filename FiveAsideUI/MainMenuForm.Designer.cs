@@ -1,7 +1,7 @@
 ﻿
 namespace FiveAsideUI
 {
-    partial class Form1
+    partial class MainMenuForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,7 +29,7 @@ namespace FiveAsideUI
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenuForm));
             this.topTitleLabel = new System.Windows.Forms.Label();
             this.bottomTitleLabel = new System.Windows.Forms.Label();
             this.signUpButton = new System.Windows.Forms.Button();
