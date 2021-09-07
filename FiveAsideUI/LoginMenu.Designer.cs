@@ -36,6 +36,7 @@ namespace FiveAsideUI
             this.Username = new System.Windows.Forms.Label();
             this.passwordTxt = new System.Windows.Forms.TextBox();
             this.passwordPrompt = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // TitleLabel
@@ -56,7 +57,7 @@ namespace FiveAsideUI
             this.LoginTXT.BackColor = System.Drawing.Color.Transparent;
             this.LoginTXT.Font = new System.Drawing.Font("Segoe UI Black", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.LoginTXT.ForeColor = System.Drawing.Color.Orange;
-            this.LoginTXT.Location = new System.Drawing.Point(85, 211);
+            this.LoginTXT.Location = new System.Drawing.Point(548, 155);
             this.LoginTXT.Name = "LoginTXT";
             this.LoginTXT.Size = new System.Drawing.Size(328, 72);
             this.LoginTXT.TabIndex = 2;
@@ -64,7 +65,7 @@ namespace FiveAsideUI
             // 
             // userTxt
             // 
-            this.userTxt.Location = new System.Drawing.Point(464, 370);
+            this.userTxt.Location = new System.Drawing.Point(488, 251);
             this.userTxt.Name = "userTxt";
             this.userTxt.Size = new System.Drawing.Size(573, 39);
             this.userTxt.TabIndex = 3;
@@ -75,7 +76,7 @@ namespace FiveAsideUI
             this.Username.BackColor = System.Drawing.Color.Transparent;
             this.Username.Font = new System.Drawing.Font("Segoe UI Black", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.Username.ForeColor = System.Drawing.Color.Black;
-            this.Username.Location = new System.Drawing.Point(26, 342);
+            this.Username.Location = new System.Drawing.Point(26, 223);
             this.Username.Name = "Username";
             this.Username.Size = new System.Drawing.Size(462, 72);
             this.Username.TabIndex = 4;
@@ -83,10 +84,10 @@ namespace FiveAsideUI
             // 
             // passwordTxt
             // 
-            this.passwordTxt.Location = new System.Drawing.Point(488, 444);
+            this.passwordTxt.Location = new System.Drawing.Point(488, 325);
             this.passwordTxt.Name = "passwordTxt";
             this.passwordTxt.PasswordChar = '*';
-            this.passwordTxt.Size = new System.Drawing.Size(549, 39);
+            this.passwordTxt.Size = new System.Drawing.Size(573, 39);
             this.passwordTxt.TabIndex = 5;
             // 
             // passwordPrompt
@@ -95,11 +96,21 @@ namespace FiveAsideUI
             this.passwordPrompt.BackColor = System.Drawing.Color.Transparent;
             this.passwordPrompt.Font = new System.Drawing.Font("Segoe UI Black", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.passwordPrompt.ForeColor = System.Drawing.Color.Black;
-            this.passwordPrompt.Location = new System.Drawing.Point(26, 416);
+            this.passwordPrompt.Location = new System.Drawing.Point(29, 297);
             this.passwordPrompt.Name = "passwordPrompt";
             this.passwordPrompt.Size = new System.Drawing.Size(459, 72);
             this.passwordPrompt.TabIndex = 6;
             this.passwordPrompt.Text = "Enter password:";
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Segoe UI Black", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.Location = new System.Drawing.Point(533, 607);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(471, 178);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "CLICK TO LOGIN TO YOUR ACCOUNT";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // LoginMenu
             // 
@@ -108,6 +119,7 @@ namespace FiveAsideUI
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1470, 847);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.passwordPrompt);
             this.Controls.Add(this.passwordTxt);
             this.Controls.Add(this.Username);
@@ -129,5 +141,6 @@ namespace FiveAsideUI
         private System.Windows.Forms.Label Username;
         private System.Windows.Forms.TextBox passwordTxt;
         private System.Windows.Forms.Label passwordPrompt;
+        private System.Windows.Forms.Button button1;
     }
 }

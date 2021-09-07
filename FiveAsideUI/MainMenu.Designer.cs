@@ -1,7 +1,7 @@
 ﻿
 namespace FiveAsideUI
 {
-    partial class MainMenuForm
+    partial class MainMenu
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,7 +29,7 @@ namespace FiveAsideUI
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenuForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenu));
             this.topTitleLabel = new System.Windows.Forms.Label();
             this.bottomTitleLabel = new System.Windows.Forms.Label();
             this.signUpButton = new System.Windows.Forms.Button();
@@ -82,8 +82,9 @@ namespace FiveAsideUI
             this.loginButton.TabIndex = 3;
             this.loginButton.Text = "Already played? Log in to your account here!";
             this.loginButton.UseVisualStyleBackColor = false;
+            this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
             // 
-            // Form1
+            // MainMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -96,7 +97,7 @@ namespace FiveAsideUI
             this.Controls.Add(this.topTitleLabel);
             this.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ForeColor = System.Drawing.Color.Black;
-            this.Name = "Form1";
+            this.Name = "MainMenuForm";
             this.Text = "Five-A-Side Dream League Simulator";
             this.ResumeLayout(false);
             this.PerformLayout();

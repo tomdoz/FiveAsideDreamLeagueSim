@@ -10,12 +10,18 @@ using System.Windows.Forms;
 
 namespace FiveAsideUI
 {
-    public partial class MainMenuForm : Form
+    public partial class MainMenu : Form
     {
         private void signUpButton_Click(object sender, EventArgs e)
         {
             
             this.Hide();
+        }
+
+        private void loginButton_Click(object sender, EventArgs e)
+        {
+            LoginMenu loginForm = new LoginMenu();
+            loginForm.Show();
         }
     }
 }
