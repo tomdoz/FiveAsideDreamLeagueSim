@@ -14,5 +14,10 @@ namespace FiveAsideUI
         {
             InitializeComponent();
         }
+
+        private void signUpButton_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

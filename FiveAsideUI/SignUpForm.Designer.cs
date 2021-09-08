@@ -174,6 +174,7 @@ namespace FiveAsideUI
             this.signUpButton.Text = "Create Account";
             this.signUpButton.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
             this.signUpButton.UseVisualStyleBackColor = true;
+            this.signUpButton.Click += new System.EventHandler(this.signUpButton_Click);
             // 
             // SignUpForm
             // 

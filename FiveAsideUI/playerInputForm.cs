@@ -8,14 +8,14 @@ using System.Windows.Forms;
 
 namespace FiveAsideUI
 {
-    public partial class LoginMenu : Form
+    public partial class playerInputForm : Form
     {
-        public LoginMenu()
+        public playerInputForm()
         {
             InitializeComponent();
         }
 
-        private void loginButton_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }
