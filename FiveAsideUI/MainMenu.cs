@@ -18,7 +18,9 @@ namespace FiveAsideUI
         }
         private void signUpButton_Click(object sender, EventArgs e)
         {
-            
+            SignUpForm signUpOpen = new SignUpForm();
+            signUpOpen.Show();                  //opens the sign up window for user to create account
+            this.Hide();
         }
 
         private void loginButton_Click(object sender, EventArgs e)
