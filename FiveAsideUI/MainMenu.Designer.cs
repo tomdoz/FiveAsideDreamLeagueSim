@@ -42,11 +42,11 @@ namespace FiveAsideUI
             this.topTitleLabel.BackColor = System.Drawing.Color.Transparent;
             this.topTitleLabel.Font = new System.Drawing.Font("Segoe UI Black", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.topTitleLabel.ForeColor = System.Drawing.Color.DarkRed;
-            this.topTitleLabel.Location = new System.Drawing.Point(42, 34);
+            this.topTitleLabel.Location = new System.Drawing.Point(147, 34);
             this.topTitleLabel.Name = "topTitleLabel";
-            this.topTitleLabel.Size = new System.Drawing.Size(1406, 106);
+            this.topTitleLabel.Size = new System.Drawing.Size(1083, 106);
             this.topTitleLabel.TabIndex = 0;
-            this.topTitleLabel.Text = "Five-A-Side Fantasy Dream League";
+            this.topTitleLabel.Text = "Five-A-Side Dream League";
             // 
             // bottomTitleLabel
             // 
@@ -84,7 +84,7 @@ namespace FiveAsideUI
             this.loginButton.UseVisualStyleBackColor = false;
             this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
             // 
-            // MainMenuForm
+            // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -97,7 +97,7 @@ namespace FiveAsideUI
             this.Controls.Add(this.topTitleLabel);
             this.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ForeColor = System.Drawing.Color.Black;
-            this.Name = "MainMenuForm";
+            this.Name = "MainMenu";
             this.Text = "Five-A-Side Dream League Simulator";
             this.ResumeLayout(false);
             this.PerformLayout();
