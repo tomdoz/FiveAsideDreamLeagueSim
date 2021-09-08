@@ -17,9 +17,7 @@ namespace FiveAsideUI
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //testing launching main menu to try and diagnose main menu bug
-            MainMenu main = new MainMenu();
-            main.Show();
+            
         }
     }
 }
