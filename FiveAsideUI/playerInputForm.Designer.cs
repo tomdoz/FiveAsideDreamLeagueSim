@@ -32,18 +32,26 @@ namespace FiveAsideUI
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(playerInputForm));
             this.playerInputTabs = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.enterTeamTXT = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.enterTeamName = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.DescriptionLabel = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.tabPage7 = new System.Windows.Forms.TabPage();
             this.topTitleLabel = new System.Windows.Forms.Label();
-            this.enterTeamName = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.enterTeamTXT = new System.Windows.Forms.TextBox();
+            this.lastNameForm = new System.Windows.Forms.Label();
+            this.Shooting = new System.Windows.Forms.Label();
+            this.ShootingSlider = new System.Windows.Forms.TrackBar();
+            this.lastNameTXT = new System.Windows.Forms.TextBox();
             this.playerInputTabs.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ShootingSlider)).BeginInit();
             this.SuspendLayout();
             // 
             // playerInputTabs
@@ -75,8 +83,43 @@ namespace FiveAsideUI
             this.tabPage1.Text = "Instructions";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // enterTeamTXT
+            // 
+            this.enterTeamTXT.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.enterTeamTXT.Location = new System.Drawing.Point(375, 445);
+            this.enterTeamTXT.Name = "enterTeamTXT";
+            this.enterTeamTXT.Size = new System.Drawing.Size(441, 40);
+            this.enterTeamTXT.TabIndex = 2;
+            this.enterTeamTXT.Text = "e.g. Gangster\'s Allardyce";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Black", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(13, 431);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(367, 54);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Enter team name:";
+            // 
+            // enterTeamName
+            // 
+            this.enterTeamName.Font = new System.Drawing.Font("Segoe UI Black", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.enterTeamName.Location = new System.Drawing.Point(13, 22);
+            this.enterTeamName.Name = "enterTeamName";
+            this.enterTeamName.Size = new System.Drawing.Size(1065, 397);
+            this.enterTeamName.TabIndex = 0;
+            this.enterTeamName.Text = resources.GetString("enterTeamName.Text");
+            this.enterTeamName.Click += new System.EventHandler(this.label1_Click);
+            // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.lastNameTXT);
+            this.tabPage2.Controls.Add(this.ShootingSlider);
+            this.tabPage2.Controls.Add(this.Shooting);
+            this.tabPage2.Controls.Add(this.lastNameForm);
+            this.tabPage2.Controls.Add(this.textBox1);
+            this.tabPage2.Controls.Add(this.DescriptionLabel);
             this.tabPage2.Location = new System.Drawing.Point(8, 46);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
@@ -84,6 +127,22 @@ namespace FiveAsideUI
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Team Captain";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(162, 13);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(200, 40);
+            this.textBox1.TabIndex = 1;
+            // 
+            // DescriptionLabel
+            // 
+            this.DescriptionLabel.AutoSize = true;
+            this.DescriptionLabel.Location = new System.Drawing.Point(6, 13);
+            this.DescriptionLabel.Name = "DescriptionLabel";
+            this.DescriptionLabel.Size = new System.Drawing.Size(149, 32);
+            this.DescriptionLabel.TabIndex = 0;
+            this.DescriptionLabel.Text = "First Name:";
             // 
             // tabPage3
             // 
@@ -147,33 +206,37 @@ namespace FiveAsideUI
             this.topTitleLabel.TabIndex = 2;
             this.topTitleLabel.Text = "Five-A-Side Dream League";
             // 
-            // enterTeamName
+            // lastNameForm
             // 
-            this.enterTeamName.Location = new System.Drawing.Point(13, 22);
-            this.enterTeamName.Name = "enterTeamName";
-            this.enterTeamName.Size = new System.Drawing.Size(1065, 397);
-            this.enterTeamName.TabIndex = 0;
-            this.enterTeamName.Text = resources.GetString("enterTeamName.Text");
-            this.enterTeamName.Click += new System.EventHandler(this.label1_Click);
+            this.lastNameForm.AutoSize = true;
+            this.lastNameForm.Location = new System.Drawing.Point(6, 67);
+            this.lastNameForm.Name = "lastNameForm";
+            this.lastNameForm.Size = new System.Drawing.Size(145, 32);
+            this.lastNameForm.TabIndex = 2;
+            this.lastNameForm.Text = "Last Name:";
             // 
-            // label2
+            // Shooting
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Black", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(13, 431);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(367, 54);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Enter team name:";
+            this.Shooting.AutoSize = true;
+            this.Shooting.Location = new System.Drawing.Point(23, 134);
+            this.Shooting.Name = "Shooting";
+            this.Shooting.Size = new System.Drawing.Size(128, 32);
+            this.Shooting.TabIndex = 3;
+            this.Shooting.Text = "Shooting;";
             // 
-            // enterTeamTXT
+            // ShootingSlider
             // 
-            this.enterTeamTXT.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.enterTeamTXT.Location = new System.Drawing.Point(375, 445);
-            this.enterTeamTXT.Name = "enterTeamTXT";
-            this.enterTeamTXT.Size = new System.Drawing.Size(441, 40);
-            this.enterTeamTXT.TabIndex = 2;
-            this.enterTeamTXT.Text = "e.g. Gangster\'s Allardyce";
+            this.ShootingSlider.Location = new System.Drawing.Point(157, 119);
+            this.ShootingSlider.Name = "ShootingSlider";
+            this.ShootingSlider.Size = new System.Drawing.Size(205, 90);
+            this.ShootingSlider.TabIndex = 4;
+            // 
+            // lastNameTXT
+            // 
+            this.lastNameTXT.Location = new System.Drawing.Point(157, 64);
+            this.lastNameTXT.Name = "lastNameTXT";
+            this.lastNameTXT.Size = new System.Drawing.Size(212, 40);
+            this.lastNameTXT.TabIndex = 5;
             // 
             // playerInputForm
             // 
@@ -190,6 +253,9 @@ namespace FiveAsideUI
             this.playerInputTabs.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ShootingSlider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -209,5 +275,11 @@ namespace FiveAsideUI
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label enterTeamName;
         private System.Windows.Forms.Label topTitleLabel;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label DescriptionLabel;
+        private System.Windows.Forms.TextBox lastNameTXT;
+        private System.Windows.Forms.TrackBar ShootingSlider;
+        private System.Windows.Forms.Label Shooting;
+        private System.Windows.Forms.Label lastNameForm;
     }
 }
