@@ -101,7 +101,7 @@ namespace FiveAsideUI
             p2CurrAgression.Text = Convert.ToString(p2AggroVal);
             p2CurrReliable.Text = Convert.ToString(p2ReliableVal);
             p2CurrTackle.Text = Convert.ToString(p2TackleVal);
-
+            p2PointsLeftLabel.Text = Convert.ToString(500 - p2ShootingSlider.Value - p2DribblingSlider.Value - p2PaceSlider.Value - p2PhysicalitySlider.Value - p2ReliableSlider.Value - p2TackleSlider.Value - p2AggressionSlider.Value);
 
         }
         //for team captain
