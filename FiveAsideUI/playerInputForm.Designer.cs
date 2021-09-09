@@ -326,7 +326,6 @@ namespace FiveAsideUI
             this.enterTeamName.Size = new System.Drawing.Size(1065, 397);
             this.enterTeamName.TabIndex = 0;
             this.enterTeamName.Text = resources.GetString("enterTeamName.Text");
-            this.enterTeamName.Click += new System.EventHandler(this.label1_Click);
             // 
             // tabPage2
             // 
@@ -401,6 +400,7 @@ namespace FiveAsideUI
             this.aggressionSlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.aggressionSlider.Size = new System.Drawing.Size(327, 90);
             this.aggressionSlider.TabIndex = 25;
+            this.aggressionSlider.Scroll += new System.EventHandler(this.aggressionSlider_Scroll);
             // 
             // agrression
             // 
@@ -429,6 +429,7 @@ namespace FiveAsideUI
             this.tackleSlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tackleSlider.Size = new System.Drawing.Size(327, 90);
             this.tackleSlider.TabIndex = 22;
+            this.tackleSlider.Scroll += new System.EventHandler(this.tackleSlider_Scroll);
             // 
             // Tackling
             // 
@@ -457,6 +458,7 @@ namespace FiveAsideUI
             this.ReliableSlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.ReliableSlider.Size = new System.Drawing.Size(327, 90);
             this.ReliableSlider.TabIndex = 19;
+            this.ReliableSlider.Scroll += new System.EventHandler(this.ReliableSlider_Scroll);
             // 
             // reliability
             // 
@@ -485,6 +487,7 @@ namespace FiveAsideUI
             this.physicalitySlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.physicalitySlider.Size = new System.Drawing.Size(327, 90);
             this.physicalitySlider.TabIndex = 16;
+            this.physicalitySlider.Scroll += new System.EventHandler(this.physicalitySlider_Scroll);
             // 
             // physicalityLabel
             // 
@@ -548,13 +551,14 @@ namespace FiveAsideUI
             // passingSlider
             // 
             this.passingSlider.BackColor = System.Drawing.SystemColors.Control;
-            this.passingSlider.Cursor = System.Windows.Forms.Cursors.No;
+            this.passingSlider.Cursor = System.Windows.Forms.Cursors.Default;
             this.passingSlider.Location = new System.Drawing.Point(157, 470);
             this.passingSlider.Maximum = 100;
             this.passingSlider.Name = "passingSlider";
             this.passingSlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.passingSlider.Size = new System.Drawing.Size(327, 90);
             this.passingSlider.TabIndex = 9;
+            this.passingSlider.Scroll += new System.EventHandler(this.paceSlider_Scroll);
             // 
             // Pace
             // 
@@ -568,13 +572,14 @@ namespace FiveAsideUI
             // dribblingSlider
             // 
             this.dribblingSlider.BackColor = System.Drawing.SystemColors.Control;
-            this.dribblingSlider.Cursor = System.Windows.Forms.Cursors.No;
+            this.dribblingSlider.Cursor = System.Windows.Forms.Cursors.Default;
             this.dribblingSlider.Location = new System.Drawing.Point(157, 360);
             this.dribblingSlider.Maximum = 100;
             this.dribblingSlider.Name = "dribblingSlider";
             this.dribblingSlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.dribblingSlider.Size = new System.Drawing.Size(327, 90);
             this.dribblingSlider.TabIndex = 7;
+            this.dribblingSlider.Scroll += new System.EventHandler(this.dribblingSlider_Scroll);
             // 
             // dribblingLab
             // 
@@ -2177,7 +2182,7 @@ namespace FiveAsideUI
             this.topTitleLabel.BackColor = System.Drawing.Color.Transparent;
             this.topTitleLabel.Font = new System.Drawing.Font("Segoe UI Black", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.topTitleLabel.ForeColor = System.Drawing.Color.DarkRed;
-            this.topTitleLabel.Location = new System.Drawing.Point(282, 34);
+            this.topTitleLabel.Location = new System.Drawing.Point(283, 34);
             this.topTitleLabel.Name = "topTitleLabel";
             this.topTitleLabel.Size = new System.Drawing.Size(1083, 106);
             this.topTitleLabel.TabIndex = 2;
