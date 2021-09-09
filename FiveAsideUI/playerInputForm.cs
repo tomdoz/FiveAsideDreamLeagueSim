@@ -10,6 +10,7 @@ namespace FiveAsideUI
 {
     public partial class playerInputForm : Form
     {
+        public int p1ShootingVal = 0;
         public playerInputForm()
         {
             InitializeComponent();
@@ -27,12 +28,12 @@ namespace FiveAsideUI
 
         private void ShootingSlider_Scroll(object sender, EventArgs e)
         {
-            int ShootingVal = ShootingSlider.Value; //change to public int where component intialises
+            p1ShootingVal = ShootingSlider.Value; 
         }
 
         private void sliderValueUpdater_Tick(object sender, EventArgs e)
         {
-            currentShooting = Convert.ToString(ShootingVal)
+            currentShooting.Text = Convert.ToString(p1ShootingVal);
         }
     }
 }
