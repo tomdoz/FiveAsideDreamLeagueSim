@@ -865,7 +865,7 @@ namespace FiveAsideUI
             // p2PaceSlider
             // 
             this.p2PaceSlider.BackColor = System.Drawing.SystemColors.Control;
-            this.p2PaceSlider.Cursor = System.Windows.Forms.Cursors.No;
+            this.p2PaceSlider.Cursor = System.Windows.Forms.Cursors.Default;
             this.p2PaceSlider.Location = new System.Drawing.Point(157, 470);
             this.p2PaceSlider.Maximum = 100;
             this.p2PaceSlider.Name = "p2PaceSlider";
@@ -886,7 +886,7 @@ namespace FiveAsideUI
             // p2DribblingSlider
             // 
             this.p2DribblingSlider.BackColor = System.Drawing.SystemColors.Control;
-            this.p2DribblingSlider.Cursor = System.Windows.Forms.Cursors.No;
+            this.p2DribblingSlider.Cursor = System.Windows.Forms.Cursors.Default;
             this.p2DribblingSlider.Location = new System.Drawing.Point(157, 360);
             this.p2DribblingSlider.Maximum = 100;
             this.p2DribblingSlider.Name = "p2DribblingSlider";
