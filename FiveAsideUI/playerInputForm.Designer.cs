@@ -714,6 +714,7 @@ namespace FiveAsideUI
             this.p2AggressionSlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.p2AggressionSlider.Size = new System.Drawing.Size(327, 90);
             this.p2AggressionSlider.TabIndex = 25;
+            this.p2AggressionSlider.Scroll += new System.EventHandler(this.p2AggressionSlider_Scroll);
             // 
             // p2AggroLabel
             // 
@@ -742,6 +743,7 @@ namespace FiveAsideUI
             this.p2TackleSlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.p2TackleSlider.Size = new System.Drawing.Size(327, 90);
             this.p2TackleSlider.TabIndex = 22;
+            this.p2TackleSlider.Scroll += new System.EventHandler(this.p2TackleSlider_Scroll);
             // 
             // p2TackelLabel
             // 
@@ -770,6 +772,7 @@ namespace FiveAsideUI
             this.p2ReliableSlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.p2ReliableSlider.Size = new System.Drawing.Size(327, 90);
             this.p2ReliableSlider.TabIndex = 19;
+            this.p2ReliableSlider.Scroll += new System.EventHandler(this.p2ReliableSlider_Scroll);
             // 
             // p2ReliableLabel
             // 
@@ -798,6 +801,7 @@ namespace FiveAsideUI
             this.p2PhysicalitySlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.p2PhysicalitySlider.Size = new System.Drawing.Size(327, 90);
             this.p2PhysicalitySlider.TabIndex = 16;
+            this.p2PhysicalitySlider.Scroll += new System.EventHandler(this.p2PhysicalitySlider_Scroll);
             // 
             // p2PhysicalLabel
             // 
@@ -868,6 +872,7 @@ namespace FiveAsideUI
             this.p2PaceSlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.p2PaceSlider.Size = new System.Drawing.Size(327, 90);
             this.p2PaceSlider.TabIndex = 9;
+            this.p2PaceSlider.Scroll += new System.EventHandler(this.p2PaceSlider_Scroll);
             // 
             // p2PaceLabel
             // 
@@ -888,6 +893,7 @@ namespace FiveAsideUI
             this.p2DribblingSlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.p2DribblingSlider.Size = new System.Drawing.Size(327, 90);
             this.p2DribblingSlider.TabIndex = 7;
+            this.p2DribblingSlider.Scroll += new System.EventHandler(this.p2DribblingSlider_Scroll);
             // 
             // p2DribbleLabel
             // 
@@ -913,6 +919,7 @@ namespace FiveAsideUI
             this.p2ShootingSlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.p2ShootingSlider.Size = new System.Drawing.Size(327, 90);
             this.p2ShootingSlider.TabIndex = 4;
+            this.p2ShootingSlider.Scroll += new System.EventHandler(this.p2ShootingSlider_Scroll);
             // 
             // p2ShootingLabel
             // 
