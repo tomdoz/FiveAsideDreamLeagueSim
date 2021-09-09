@@ -37,6 +37,24 @@ namespace FiveAsideUI
             label1.Text = Convert.ToString(p1TackleVal);
             currentAgrression.Text = Convert.ToString(p1AggroVal);
             currentPace.Text = Convert.ToString(p1PaceVal);
+            pointsRemainingNum.Text = Convert.ToString(500 - ShootingSlider.Value - dribblingSlider.Value - passingSlider.Value - physicalitySlider.Value - ReliableSlider.Value - aggressionSlider.Value - tackleSlider.Value);
+            if (Convert.ToInt32(pointsRemainingNum.Text) < 0) //if no skill points are remaining
+            {
+                ShootingSlider.Value = 0;
+                dribblingSlider.Value = 0;
+                passingSlider.Value = 0;
+                physicalitySlider.Value = 0;
+                ReliableSlider.Value = 0;
+                tackleSlider.Value = 0;
+                aggressionSlider.Value = 0;
+                currentShooting.Text = "0";
+                currentDribbling.Text = "0";
+                currentPhysical.Text = "0";
+                currentReliability.Text = "0";
+                label1.Text = "0";
+                currentAgrression.Text = "0";
+                currentPace.Text = "0";
+            }
 
         }
 
