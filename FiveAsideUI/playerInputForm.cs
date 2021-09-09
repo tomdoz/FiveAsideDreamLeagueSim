@@ -19,5 +19,10 @@ namespace FiveAsideUI
         {
 
         }
+
+        private void topTitleLabel_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
