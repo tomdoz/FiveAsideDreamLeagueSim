@@ -1028,6 +1028,7 @@ namespace FiveAsideUI
             this.p3AggroSlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.p3AggroSlider.Size = new System.Drawing.Size(327, 90);
             this.p3AggroSlider.TabIndex = 25;
+            this.p3AggroSlider.Scroll += new System.EventHandler(this.p3AggroSlider_Scroll);
             // 
             // label6
             // 
@@ -1056,6 +1057,7 @@ namespace FiveAsideUI
             this.p3TackleSlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.p3TackleSlider.Size = new System.Drawing.Size(327, 90);
             this.p3TackleSlider.TabIndex = 22;
+            this.p3TackleSlider.Scroll += new System.EventHandler(this.p3TackleSlider_Scroll);
             // 
             // label8
             // 
@@ -1084,6 +1086,7 @@ namespace FiveAsideUI
             this.p3ReliableSlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.p3ReliableSlider.Size = new System.Drawing.Size(327, 90);
             this.p3ReliableSlider.TabIndex = 19;
+            this.p3ReliableSlider.Scroll += new System.EventHandler(this.p3ReliableSlider_Scroll);
             // 
             // label10
             // 
@@ -1112,6 +1115,7 @@ namespace FiveAsideUI
             this.p3PhysicalSlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.p3PhysicalSlider.Size = new System.Drawing.Size(327, 90);
             this.p3PhysicalSlider.TabIndex = 16;
+            this.p3PhysicalSlider.Scroll += new System.EventHandler(this.p3PhysicalSlider_Scroll);
             // 
             // label12
             // 
@@ -1175,13 +1179,14 @@ namespace FiveAsideUI
             // p3PaceSlider
             // 
             this.p3PaceSlider.BackColor = System.Drawing.SystemColors.Control;
-            this.p3PaceSlider.Cursor = System.Windows.Forms.Cursors.No;
+            this.p3PaceSlider.Cursor = System.Windows.Forms.Cursors.Default;
             this.p3PaceSlider.Location = new System.Drawing.Point(157, 470);
             this.p3PaceSlider.Maximum = 100;
             this.p3PaceSlider.Name = "p3PaceSlider";
             this.p3PaceSlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.p3PaceSlider.Size = new System.Drawing.Size(327, 90);
             this.p3PaceSlider.TabIndex = 9;
+            this.p3PaceSlider.Scroll += new System.EventHandler(this.p3PaceSlider_Scroll);
             // 
             // label19
             // 
@@ -1195,13 +1200,14 @@ namespace FiveAsideUI
             // p3DribblingSlider
             // 
             this.p3DribblingSlider.BackColor = System.Drawing.SystemColors.Control;
-            this.p3DribblingSlider.Cursor = System.Windows.Forms.Cursors.No;
+            this.p3DribblingSlider.Cursor = System.Windows.Forms.Cursors.Default;
             this.p3DribblingSlider.Location = new System.Drawing.Point(157, 360);
             this.p3DribblingSlider.Maximum = 100;
             this.p3DribblingSlider.Name = "p3DribblingSlider";
             this.p3DribblingSlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.p3DribblingSlider.Size = new System.Drawing.Size(327, 90);
             this.p3DribblingSlider.TabIndex = 7;
+            this.p3DribblingSlider.Scroll += new System.EventHandler(this.p3DribblingSlider_Scroll);
             // 
             // label20
             // 
@@ -1227,6 +1233,7 @@ namespace FiveAsideUI
             this.p3ShootingSlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.p3ShootingSlider.Size = new System.Drawing.Size(327, 90);
             this.p3ShootingSlider.TabIndex = 4;
+            this.p3ShootingSlider.Scroll += new System.EventHandler(this.p3ShootingSlider_Scroll);
             // 
             // label21
             // 
@@ -1335,6 +1342,7 @@ namespace FiveAsideUI
             this.p4AgrroSlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.p4AgrroSlider.Size = new System.Drawing.Size(327, 90);
             this.p4AgrroSlider.TabIndex = 25;
+            this.p4AgrroSlider.Scroll += new System.EventHandler(this.p4AgrroSlider_Scroll);
             // 
             // label26
             // 
@@ -1363,6 +1371,7 @@ namespace FiveAsideUI
             this.p4TackleSlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.p4TackleSlider.Size = new System.Drawing.Size(327, 90);
             this.p4TackleSlider.TabIndex = 22;
+            this.p4TackleSlider.Scroll += new System.EventHandler(this.p4TackleSlider_Scroll);
             // 
             // label28
             // 
@@ -1391,6 +1400,7 @@ namespace FiveAsideUI
             this.p4ReliableSlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.p4ReliableSlider.Size = new System.Drawing.Size(327, 90);
             this.p4ReliableSlider.TabIndex = 19;
+            this.p4ReliableSlider.Scroll += new System.EventHandler(this.p4ReliableSlider_Scroll);
             // 
             // label30
             // 
@@ -1419,6 +1429,7 @@ namespace FiveAsideUI
             this.p4PhysicalSlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.p4PhysicalSlider.Size = new System.Drawing.Size(327, 90);
             this.p4PhysicalSlider.TabIndex = 16;
+            this.p4PhysicalSlider.Scroll += new System.EventHandler(this.p4PhysicalSlider_Scroll);
             // 
             // label32
             // 
@@ -1482,13 +1493,14 @@ namespace FiveAsideUI
             // p4PaceSlider
             // 
             this.p4PaceSlider.BackColor = System.Drawing.SystemColors.Control;
-            this.p4PaceSlider.Cursor = System.Windows.Forms.Cursors.No;
+            this.p4PaceSlider.Cursor = System.Windows.Forms.Cursors.Default;
             this.p4PaceSlider.Location = new System.Drawing.Point(157, 470);
             this.p4PaceSlider.Maximum = 100;
             this.p4PaceSlider.Name = "p4PaceSlider";
             this.p4PaceSlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.p4PaceSlider.Size = new System.Drawing.Size(327, 90);
             this.p4PaceSlider.TabIndex = 9;
+            this.p4PaceSlider.Scroll += new System.EventHandler(this.p4PaceSlider_Scroll);
             // 
             // label38
             // 
@@ -1502,13 +1514,14 @@ namespace FiveAsideUI
             // p4DribblingSlider
             // 
             this.p4DribblingSlider.BackColor = System.Drawing.SystemColors.Control;
-            this.p4DribblingSlider.Cursor = System.Windows.Forms.Cursors.No;
+            this.p4DribblingSlider.Cursor = System.Windows.Forms.Cursors.Default;
             this.p4DribblingSlider.Location = new System.Drawing.Point(157, 360);
             this.p4DribblingSlider.Maximum = 100;
             this.p4DribblingSlider.Name = "p4DribblingSlider";
             this.p4DribblingSlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.p4DribblingSlider.Size = new System.Drawing.Size(327, 90);
             this.p4DribblingSlider.TabIndex = 7;
+            this.p4DribblingSlider.Scroll += new System.EventHandler(this.p4DribblingSlider_Scroll);
             // 
             // label39
             // 
@@ -1534,6 +1547,7 @@ namespace FiveAsideUI
             this.p4ShootingSlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.p4ShootingSlider.Size = new System.Drawing.Size(327, 90);
             this.p4ShootingSlider.TabIndex = 4;
+            this.p4ShootingSlider.Scroll += new System.EventHandler(this.p4ShootingSlider_Scroll);
             // 
             // label40
             // 
@@ -1642,6 +1656,7 @@ namespace FiveAsideUI
             this.p5AggroSlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.p5AggroSlider.Size = new System.Drawing.Size(327, 90);
             this.p5AggroSlider.TabIndex = 25;
+            this.p5AggroSlider.Scroll += new System.EventHandler(this.p5AggroSlider_Scroll);
             // 
             // label45
             // 
@@ -1670,6 +1685,7 @@ namespace FiveAsideUI
             this.p5TackleSlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.p5TackleSlider.Size = new System.Drawing.Size(327, 90);
             this.p5TackleSlider.TabIndex = 22;
+            this.p5TackleSlider.Scroll += new System.EventHandler(this.p5TackleSlider_Scroll);
             // 
             // label47
             // 
@@ -1698,6 +1714,7 @@ namespace FiveAsideUI
             this.p5ReliableSlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.p5ReliableSlider.Size = new System.Drawing.Size(327, 90);
             this.p5ReliableSlider.TabIndex = 19;
+            this.p5ReliableSlider.Scroll += new System.EventHandler(this.p5ReliableSlider_Scroll);
             // 
             // label49
             // 
@@ -1726,6 +1743,7 @@ namespace FiveAsideUI
             this.p5PhysicalitySlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.p5PhysicalitySlider.Size = new System.Drawing.Size(327, 90);
             this.p5PhysicalitySlider.TabIndex = 16;
+            this.p5PhysicalitySlider.Scroll += new System.EventHandler(this.p5PhysicalitySlider_Scroll);
             // 
             // label51
             // 
@@ -1789,13 +1807,14 @@ namespace FiveAsideUI
             // p5PaceSlider
             // 
             this.p5PaceSlider.BackColor = System.Drawing.SystemColors.Control;
-            this.p5PaceSlider.Cursor = System.Windows.Forms.Cursors.No;
+            this.p5PaceSlider.Cursor = System.Windows.Forms.Cursors.Default;
             this.p5PaceSlider.Location = new System.Drawing.Point(157, 470);
             this.p5PaceSlider.Maximum = 100;
             this.p5PaceSlider.Name = "p5PaceSlider";
             this.p5PaceSlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.p5PaceSlider.Size = new System.Drawing.Size(327, 90);
             this.p5PaceSlider.TabIndex = 9;
+            this.p5PaceSlider.Scroll += new System.EventHandler(this.p5PaceSlider_Scroll);
             // 
             // label57
             // 
@@ -1809,13 +1828,14 @@ namespace FiveAsideUI
             // p5DribblingSlider
             // 
             this.p5DribblingSlider.BackColor = System.Drawing.SystemColors.Control;
-            this.p5DribblingSlider.Cursor = System.Windows.Forms.Cursors.No;
+            this.p5DribblingSlider.Cursor = System.Windows.Forms.Cursors.Default;
             this.p5DribblingSlider.Location = new System.Drawing.Point(157, 360);
             this.p5DribblingSlider.Maximum = 100;
             this.p5DribblingSlider.Name = "p5DribblingSlider";
             this.p5DribblingSlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.p5DribblingSlider.Size = new System.Drawing.Size(327, 90);
             this.p5DribblingSlider.TabIndex = 7;
+            this.p5DribblingSlider.Scroll += new System.EventHandler(this.p5DribblingSlider_Scroll);
             // 
             // label58
             // 
@@ -1841,6 +1861,7 @@ namespace FiveAsideUI
             this.p5ShootingSlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.p5ShootingSlider.Size = new System.Drawing.Size(327, 90);
             this.p5ShootingSlider.TabIndex = 4;
+            this.p5ShootingSlider.Scroll += new System.EventHandler(this.p5ShootingSlider_Scroll);
             // 
             // label59
             // 
@@ -1949,6 +1970,7 @@ namespace FiveAsideUI
             this.subAggroSlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.subAggroSlider.Size = new System.Drawing.Size(327, 90);
             this.subAggroSlider.TabIndex = 25;
+            this.subAggroSlider.Scroll += new System.EventHandler(this.subAggroSlider_Scroll);
             // 
             // label64
             // 
@@ -1977,6 +1999,7 @@ namespace FiveAsideUI
             this.subTackleSlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.subTackleSlider.Size = new System.Drawing.Size(327, 90);
             this.subTackleSlider.TabIndex = 22;
+            this.subTackleSlider.Scroll += new System.EventHandler(this.subTackleSlider_Scroll);
             // 
             // label66
             // 
@@ -2005,6 +2028,7 @@ namespace FiveAsideUI
             this.subReliableSlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.subReliableSlider.Size = new System.Drawing.Size(327, 90);
             this.subReliableSlider.TabIndex = 19;
+            this.subReliableSlider.Scroll += new System.EventHandler(this.subReliableSlider_Scroll);
             // 
             // label68
             // 
@@ -2033,6 +2057,7 @@ namespace FiveAsideUI
             this.subPhysicalSlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.subPhysicalSlider.Size = new System.Drawing.Size(327, 90);
             this.subPhysicalSlider.TabIndex = 16;
+            this.subPhysicalSlider.Scroll += new System.EventHandler(this.subPhysicalSlider_Scroll);
             // 
             // label70
             // 
@@ -2096,13 +2121,14 @@ namespace FiveAsideUI
             // subPaceSlider
             // 
             this.subPaceSlider.BackColor = System.Drawing.SystemColors.Control;
-            this.subPaceSlider.Cursor = System.Windows.Forms.Cursors.No;
+            this.subPaceSlider.Cursor = System.Windows.Forms.Cursors.Default;
             this.subPaceSlider.Location = new System.Drawing.Point(157, 470);
             this.subPaceSlider.Maximum = 100;
             this.subPaceSlider.Name = "subPaceSlider";
             this.subPaceSlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.subPaceSlider.Size = new System.Drawing.Size(327, 90);
             this.subPaceSlider.TabIndex = 9;
+            this.subPaceSlider.Scroll += new System.EventHandler(this.subPaceSlider_Scroll);
             // 
             // label76
             // 
@@ -2116,13 +2142,14 @@ namespace FiveAsideUI
             // subDribblingSlider
             // 
             this.subDribblingSlider.BackColor = System.Drawing.SystemColors.Control;
-            this.subDribblingSlider.Cursor = System.Windows.Forms.Cursors.No;
+            this.subDribblingSlider.Cursor = System.Windows.Forms.Cursors.Default;
             this.subDribblingSlider.Location = new System.Drawing.Point(157, 360);
             this.subDribblingSlider.Maximum = 100;
             this.subDribblingSlider.Name = "subDribblingSlider";
             this.subDribblingSlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.subDribblingSlider.Size = new System.Drawing.Size(327, 90);
             this.subDribblingSlider.TabIndex = 7;
+            this.subDribblingSlider.Scroll += new System.EventHandler(this.subDribblingSlider_Scroll);
             // 
             // label77
             // 
@@ -2148,6 +2175,7 @@ namespace FiveAsideUI
             this.subShootingSlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.subShootingSlider.Size = new System.Drawing.Size(327, 90);
             this.subShootingSlider.TabIndex = 4;
+            this.subShootingSlider.Scroll += new System.EventHandler(this.subShootingSlider_Scroll);
             // 
             // label78
             // 
