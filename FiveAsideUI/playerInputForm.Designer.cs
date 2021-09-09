@@ -29,6 +29,7 @@ namespace FiveAsideUI
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(playerInputForm));
             this.playerInputTabs = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
@@ -95,7 +96,6 @@ namespace FiveAsideUI
             this.p2LastNameLabel = new System.Windows.Forms.Label();
             this.p2firstNameTxt = new System.Windows.Forms.TextBox();
             this.p2FirstNameLabel = new System.Windows.Forms.Label();
-            this.topTitleLabel = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
             this.p3ShirtTxt = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -216,6 +216,8 @@ namespace FiveAsideUI
             this.label79 = new System.Windows.Forms.Label();
             this.subFirstNameTxt = new System.Windows.Forms.TextBox();
             this.label80 = new System.Windows.Forms.Label();
+            this.topTitleLabel = new System.Windows.Forms.Label();
+            this.sliderValueUpdater = new System.Windows.Forms.Timer(this.components);
             this.playerInputTabs.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -598,6 +600,7 @@ namespace FiveAsideUI
             this.ShootingSlider.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.ShootingSlider.Size = new System.Drawing.Size(327, 90);
             this.ShootingSlider.TabIndex = 4;
+            this.ShootingSlider.Scroll += new System.EventHandler(this.ShootingSlider_Scroll);
             // 
             // Shooting
             // 
@@ -939,18 +942,6 @@ namespace FiveAsideUI
             this.p2FirstNameLabel.Size = new System.Drawing.Size(149, 32);
             this.p2FirstNameLabel.TabIndex = 0;
             this.p2FirstNameLabel.Text = "First Name:";
-            // 
-            // topTitleLabel
-            // 
-            this.topTitleLabel.AutoSize = true;
-            this.topTitleLabel.BackColor = System.Drawing.Color.Transparent;
-            this.topTitleLabel.Font = new System.Drawing.Font("Segoe UI Black", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.topTitleLabel.ForeColor = System.Drawing.Color.DarkRed;
-            this.topTitleLabel.Location = new System.Drawing.Point(282, 34);
-            this.topTitleLabel.Name = "topTitleLabel";
-            this.topTitleLabel.Size = new System.Drawing.Size(1083, 106);
-            this.topTitleLabel.TabIndex = 2;
-            this.topTitleLabel.Text = "Five-A-Side Dream League";
             // 
             // tabPage3
             // 
@@ -2180,6 +2171,24 @@ namespace FiveAsideUI
             this.label80.TabIndex = 0;
             this.label80.Text = "First Name:";
             // 
+            // topTitleLabel
+            // 
+            this.topTitleLabel.AutoSize = true;
+            this.topTitleLabel.BackColor = System.Drawing.Color.Transparent;
+            this.topTitleLabel.Font = new System.Drawing.Font("Segoe UI Black", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.topTitleLabel.ForeColor = System.Drawing.Color.DarkRed;
+            this.topTitleLabel.Location = new System.Drawing.Point(282, 34);
+            this.topTitleLabel.Name = "topTitleLabel";
+            this.topTitleLabel.Size = new System.Drawing.Size(1083, 106);
+            this.topTitleLabel.TabIndex = 2;
+            this.topTitleLabel.Text = "Five-A-Side Dream League";
+            // 
+            // sliderValueUpdater
+            // 
+            this.sliderValueUpdater.Enabled = true;
+            this.sliderValueUpdater.Interval = 10;
+            this.sliderValueUpdater.Tick += new System.EventHandler(this.sliderValueUpdater_Tick);
+            // 
             // playerInputForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 32F);
@@ -2442,5 +2451,6 @@ namespace FiveAsideUI
         private System.Windows.Forms.Label label79;
         private System.Windows.Forms.TextBox subFirstNameTxt;
         private System.Windows.Forms.Label label80;
+        private System.Windows.Forms.Timer sliderValueUpdater;
     }
 }

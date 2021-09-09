@@ -24,5 +24,15 @@ namespace FiveAsideUI
         {
 
         }
+
+        private void ShootingSlider_Scroll(object sender, EventArgs e)
+        {
+            int ShootingVal = ShootingSlider.Value; //change to public int where component intialises
+        }
+
+        private void sliderValueUpdater_Tick(object sender, EventArgs e)
+        {
+            currentShooting = Convert.ToString(ShootingVal)
+        }
     }
 }

@@ -17,7 +17,9 @@ namespace FiveAsideUI
 
         private void signUpButton_Click(object sender, EventArgs e)
         {
-            
+            playerInputForm inputTeam = new playerInputForm();
+            inputTeam.Show();
+            this.Hide();
         }
     }
 }
