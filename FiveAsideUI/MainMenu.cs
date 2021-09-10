@@ -29,5 +29,13 @@ namespace FiveAsideUI
             loginForm.Show();       //opens LoginMenu page, closes main menu
             this.Hide();
         }
+
+        //temporary button to allow access to test DataOutputForm
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DataOutputForm data = new DataOutputForm();
+            data.Show();
+            this.Hide();
+        }
     }
 }

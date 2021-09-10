@@ -196,7 +196,7 @@ namespace FiveAsideUI
                 p5ShootingSlider.Value = 0;
                 p5DribblingSlider.Value = 0;
                 p5PaceSlider.Value = 0;
-                p5PhysicalitySlider.Value = 0;
+                p5PhysicalitySlider.Value = 0; 
                 p5ReliableSlider.Value = 0;
                 p5TackleSlider.Value = 0;
                 p5AggroSlider.Value = 0;
