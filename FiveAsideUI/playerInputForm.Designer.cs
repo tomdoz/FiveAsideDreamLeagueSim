@@ -301,12 +301,12 @@ namespace FiveAsideUI
             // 
             // enterTeamTXT
             // 
-            this.enterTeamTXT.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.enterTeamTXT.ForeColor = System.Drawing.SystemColors.Desktop;
             this.enterTeamTXT.Location = new System.Drawing.Point(375, 445);
             this.enterTeamTXT.Name = "enterTeamTXT";
+            this.enterTeamTXT.PlaceholderText = "e.g. Gangster\'s Allardyce";
             this.enterTeamTXT.Size = new System.Drawing.Size(441, 40);
             this.enterTeamTXT.TabIndex = 2;
-            this.enterTeamTXT.Text = "e.g. Gangster\'s Allardyce";
             // 
             // label2
             // 
@@ -2231,8 +2231,8 @@ namespace FiveAsideUI
             // 
             // playerInputForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 32F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
+            this.AutoSize = true;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1696, 847);
