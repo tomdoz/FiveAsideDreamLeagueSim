@@ -53,7 +53,9 @@ namespace FiveAsideUI
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.SystemColors.Control;
             this.label1.Font = new System.Drawing.Font("Segoe UI Black", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.DarkRed;
             this.label1.Location = new System.Drawing.Point(12, 172);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(535, 144);
@@ -67,7 +69,7 @@ namespace FiveAsideUI
             this.statisticPicker.Items.AddRange(new object[] {
             "Top goalscorer",
             "Team most likely to win the league",
-            "The average final position in the league of the team you inputted"});
+            "User\'s team average final position"});
             this.statisticPicker.Location = new System.Drawing.Point(553, 204);
             this.statisticPicker.Name = "statisticPicker";
             this.statisticPicker.Size = new System.Drawing.Size(895, 79);
@@ -78,7 +80,7 @@ namespace FiveAsideUI
             // 
             this.dataOutputLabel.AutoSize = true;
             this.dataOutputLabel.Font = new System.Drawing.Font("Segoe UI Black", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.dataOutputLabel.Location = new System.Drawing.Point(316, 485);
+            this.dataOutputLabel.Location = new System.Drawing.Point(290, 485);
             this.dataOutputLabel.Name = "dataOutputLabel";
             this.dataOutputLabel.Size = new System.Drawing.Size(837, 72);
             this.dataOutputLabel.TabIndex = 6;

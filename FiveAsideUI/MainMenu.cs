@@ -33,8 +33,8 @@ namespace FiveAsideUI
         //temporary button to allow access to test DataOutputForm
         private void button1_Click(object sender, EventArgs e)
         {
-            DataOutputForm data = new DataOutputForm();
-            data.Show();
+            SimulationStarter test = new SimulationStarter();
+            test.Show();
             this.Hide();
         }
     }
