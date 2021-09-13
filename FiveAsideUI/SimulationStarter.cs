@@ -21,5 +21,11 @@ namespace FiveAsideUI
         {
             numSeasons = Convert.ToInt32(numSeasonsUpDown.Value);
         }
+
+        private void startSimulationButton_Click(object sender, EventArgs e)
+        {
+            //StartSimulation();
+            
+        }
     }
 }

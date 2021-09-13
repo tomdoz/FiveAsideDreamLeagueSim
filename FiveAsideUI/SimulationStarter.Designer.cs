@@ -33,6 +33,7 @@ namespace FiveAsideUI
             this.topTitleLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.numSeasonsUpDown = new System.Windows.Forms.NumericUpDown();
+            this.startSimulationButton = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.numSeasonsUpDown)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,6 +86,17 @@ namespace FiveAsideUI
             0});
             this.numSeasonsUpDown.ValueChanged += new System.EventHandler(this.numSeasonsUpDown_ValueChanged);
             // 
+            // startSimulationButton
+            // 
+            this.startSimulationButton.Font = new System.Drawing.Font("Segoe UI Black", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.startSimulationButton.Location = new System.Drawing.Point(846, 445);
+            this.startSimulationButton.Name = "startSimulationButton";
+            this.startSimulationButton.Size = new System.Drawing.Size(407, 154);
+            this.startSimulationButton.TabIndex = 4;
+            this.startSimulationButton.Text = "Start simulation!";
+            this.startSimulationButton.UseVisualStyleBackColor = true;
+            this.startSimulationButton.Click += new System.EventHandler(this.startSimulationButton_Click);
+            // 
             // SimulationStarter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
@@ -92,6 +104,7 @@ namespace FiveAsideUI
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1470, 847);
+            this.Controls.Add(this.startSimulationButton);
             this.Controls.Add(this.numSeasonsUpDown);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.topTitleLabel);
@@ -108,5 +121,6 @@ namespace FiveAsideUI
         private System.Windows.Forms.Label topTitleLabel;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.NumericUpDown numSeasonsUpDown;
+        private System.Windows.Forms.Button startSimulationButton;
     }
 }

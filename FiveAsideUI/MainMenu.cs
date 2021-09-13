@@ -30,10 +30,12 @@ namespace FiveAsideUI
             this.Hide();
         }
 
-        //temporary button to allow access to test DataOutputForm
+        //temporary button to allow access to test
         private void button1_Click(object sender, EventArgs e)
         {
             SimulationStarter test = new SimulationStarter();
+            DataOutputForm test2 = new DataOutputForm();
+            test2.Show();
             test.Show();
             this.Hide();
         }
