@@ -454,5 +454,21 @@ namespace FiveAsideUI
         {
             subAggroVal = subAggroSlider.Value;
         }
+
+        private void submitTeamButton_Click(object sender, EventArgs e)
+        {
+            if (Convert.ToInt32(pointsRemainingNum.Text) == 0 && Convert.ToInt32(p2PointsLeftLabel.Text) == 0 && Convert.ToInt32(p3PointsRemaining.Text) == 0 && Convert.ToInt32(p4PointsRemaining.Text) == 0 && Convert.ToInt32(p5PointsRemaining.Text) == 0 && Convert.ToInt32(subPointsRemaining.Text) == 0)
+            {
+                SimulationStarter simulation = new SimulationStarter();
+                simulation.Show();
+                this.Hide();
+            }
+            else
+            {
+                string message = "You need to use all the available skill points for each player!";
+                string title = "Couldn't submit team";
+                MessageBox.Show(message, title);
+            }
+        }
     }
 }

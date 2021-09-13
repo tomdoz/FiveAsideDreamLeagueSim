@@ -25,7 +25,9 @@ namespace FiveAsideUI
         private void startSimulationButton_Click(object sender, EventArgs e)
         {
             //StartSimulation();
-            
+            DataOutputForm data = new DataOutputForm();
+            data.Show();
+            this.Hide();
         }
     }
 }

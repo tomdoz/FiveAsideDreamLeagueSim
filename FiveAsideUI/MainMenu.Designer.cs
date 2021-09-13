@@ -34,7 +34,6 @@ namespace FiveAsideUI
             this.bottomTitleLabel = new System.Windows.Forms.Label();
             this.signUpButton = new System.Windows.Forms.Button();
             this.loginButton = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // topTitleLabel
@@ -85,16 +84,6 @@ namespace FiveAsideUI
             this.loginButton.UseVisualStyleBackColor = false;
             this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(763, 661);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(315, 106);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "temporary testing button";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // MainMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 32F);
@@ -102,7 +91,6 @@ namespace FiveAsideUI
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1470, 847);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.loginButton);
             this.Controls.Add(this.signUpButton);
             this.Controls.Add(this.bottomTitleLabel);
@@ -122,7 +110,6 @@ namespace FiveAsideUI
         private System.Windows.Forms.Label bottomTitleLabel;
         private System.Windows.Forms.Button signUpButton;
         private System.Windows.Forms.Button loginButton;
-        private System.Windows.Forms.Button button1;
     }
 }
 

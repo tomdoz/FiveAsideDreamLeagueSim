@@ -17,7 +17,9 @@ namespace FiveAsideUI
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-
+            SimulationStarter sim = new SimulationStarter();
+            sim.Show();
+            this.Hide();
         }
     }
 }

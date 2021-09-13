@@ -218,6 +218,7 @@ namespace FiveAsideUI
             this.label80 = new System.Windows.Forms.Label();
             this.topTitleLabel = new System.Windows.Forms.Label();
             this.sliderValueUpdater = new System.Windows.Forms.Timer(this.components);
+            this.submitTeamButton = new System.Windows.Forms.Button();
             this.playerInputTabs.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -2229,6 +2230,17 @@ namespace FiveAsideUI
             this.sliderValueUpdater.Interval = 10;
             this.sliderValueUpdater.Tick += new System.EventHandler(this.sliderValueUpdater_Tick);
             // 
+            // submitTeamButton
+            // 
+            this.submitTeamButton.Font = new System.Drawing.Font("Segoe UI Black", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.submitTeamButton.Location = new System.Drawing.Point(1259, 417);
+            this.submitTeamButton.Name = "submitTeamButton";
+            this.submitTeamButton.Size = new System.Drawing.Size(412, 225);
+            this.submitTeamButton.TabIndex = 3;
+            this.submitTeamButton.Text = "Submit\r\n Team\r\n";
+            this.submitTeamButton.UseVisualStyleBackColor = true;
+            this.submitTeamButton.Click += new System.EventHandler(this.submitTeamButton_Click);
+            // 
             // playerInputForm
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Inherit;
@@ -2236,6 +2248,7 @@ namespace FiveAsideUI
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1696, 847);
+            this.Controls.Add(this.submitTeamButton);
             this.Controls.Add(this.topTitleLabel);
             this.Controls.Add(this.playerInputTabs);
             this.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
@@ -2492,5 +2505,6 @@ namespace FiveAsideUI
         private System.Windows.Forms.TextBox subFirstNameTxt;
         private System.Windows.Forms.Label label80;
         private System.Windows.Forms.Timer sliderValueUpdater;
+        private System.Windows.Forms.Button submitTeamButton;
     }
 }
