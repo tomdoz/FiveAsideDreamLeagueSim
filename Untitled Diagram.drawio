@@ -1,0 +1,75 @@
+<mxfile host="app.diagrams.net" modified="2021-09-16T11:15:57.927Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/93.0.4577.82 Safari/537.36" etag="5lffarm0K5jMLJt_khv0" version="14.8.4" type="github">
+  <diagram id="0m_qA35KJLolAycGum2U" name="Page-1">
+    <mxGraphModel dx="870" dy="594" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="LX9wzMwzc0tQvS8Q4LW--2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="LX9wzMwzc0tQvS8Q4LW--1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="350" y="270" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="410" y="245" />
+              <mxPoint x="350" y="245" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LX9wzMwzc0tQvS8Q4LW--3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="LX9wzMwzc0tQvS8Q4LW--1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="470" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LX9wzMwzc0tQvS8Q4LW--1" value="Main Menu" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="350" y="160" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LX9wzMwzc0tQvS8Q4LW--6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="LX9wzMwzc0tQvS8Q4LW--4" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LX9wzMwzc0tQvS8Q4LW--4" value="Sign Up&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LX9wzMwzc0tQvS8Q4LW--14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="LX9wzMwzc0tQvS8Q4LW--5" target="LX9wzMwzc0tQvS8Q4LW--12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LX9wzMwzc0tQvS8Q4LW--5" value="Log in to account" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="460" y="270" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LX9wzMwzc0tQvS8Q4LW--8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="LX9wzMwzc0tQvS8Q4LW--7" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LX9wzMwzc0tQvS8Q4LW--7" value="Team Name Input" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="360" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="LX9wzMwzc0tQvS8Q4LW--15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="LX9wzMwzc0tQvS8Q4LW--9" target="LX9wzMwzc0tQvS8Q4LW--12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LX9wzMwzc0tQvS8Q4LW--9" value="Input stats for all 6 players" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="240" y="460" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="LX9wzMwzc0tQvS8Q4LW--17" value="Simulation runs" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;align=right;" parent="1" source="LX9wzMwzc0tQvS8Q4LW--12" target="LX9wzMwzc0tQvS8Q4LW--16" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="425" y="680" />
+              <mxPoint x="425" y="680" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="LX9wzMwzc0tQvS8Q4LW--12" value="Select how many seasons you want to be simulated" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="365" y="570" width="120" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="1uonSgVXQ9c9QgvQDt2h-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="LX9wzMwzc0tQvS8Q4LW--16" target="1uonSgVXQ9c9QgvQDt2h-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="LX9wzMwzc0tQvS8Q4LW--16" value="Statistics output" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="365" y="720" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1uonSgVXQ9c9QgvQDt2h-2" value="Leader-board interaction screens&amp;nbsp;&amp;nbsp;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="365" y="840" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
