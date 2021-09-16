@@ -36,6 +36,7 @@ namespace FiveAsideUI
             this.statisticPicker = new System.Windows.Forms.ComboBox();
             this.dataOutputLabel = new System.Windows.Forms.Label();
             this.statisticDisplayerUpdater = new System.Windows.Forms.Timer(this.components);
+            this.goToLB = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // topTitleLabel
@@ -92,6 +93,18 @@ namespace FiveAsideUI
             this.statisticDisplayerUpdater.Enabled = true;
             this.statisticDisplayerUpdater.Tick += new System.EventHandler(this.statisticDisplayerUpdater_tick);
             // 
+            // goToLB
+            // 
+            this.goToLB.Font = new System.Drawing.Font("Segoe UI Black", 16.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.goToLB.Location = new System.Drawing.Point(553, 622);
+            this.goToLB.Name = "goToLB";
+            this.goToLB.Size = new System.Drawing.Size(345, 145);
+            this.goToLB.TabIndex = 7;
+            this.goToLB.Text = "Access Leaderboards";
+            this.goToLB.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.goToLB.UseVisualStyleBackColor = true;
+            this.goToLB.Click += new System.EventHandler(this.goToLB_Click);
+            // 
             // DataOutputForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
@@ -99,6 +112,7 @@ namespace FiveAsideUI
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1470, 847);
+            this.Controls.Add(this.goToLB);
             this.Controls.Add(this.dataOutputLabel);
             this.Controls.Add(this.statisticPicker);
             this.Controls.Add(this.label1);
@@ -117,5 +131,6 @@ namespace FiveAsideUI
         private System.Windows.Forms.ComboBox statisticPicker;
         private System.Windows.Forms.Label dataOutputLabel;
         private System.Windows.Forms.Timer statisticDisplayerUpdater;
+        private System.Windows.Forms.Button goToLB;
     }
 }

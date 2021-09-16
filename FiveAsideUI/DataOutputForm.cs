@@ -41,5 +41,12 @@ namespace FiveAsideUI
                 dataOutputLabel.Text = ("The average final position in the \r\n league of your 5-aside dream team was: \r\n");
             }
         }
+
+        private void goToLB_Click(object sender, EventArgs e)
+        {
+            Leaderboards leaderboards = new Leaderboards();
+            leaderboards.Show();
+            this.Hide();
+        }
     }
 }
