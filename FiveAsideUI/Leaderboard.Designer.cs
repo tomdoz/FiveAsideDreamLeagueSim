@@ -37,6 +37,15 @@ namespace FiveAsideUI
             this.usernameLabel = new System.Windows.Forms.Label();
             this.rankLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.leaderboard.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -61,11 +70,20 @@ namespace FiveAsideUI
             this.leaderboard.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.00063F));
             this.leaderboard.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.00063F));
             this.leaderboard.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 24.99813F));
+            this.leaderboard.Controls.Add(this.label10, 0, 10);
             this.leaderboard.Controls.Add(this.avgFinishLabel, 3, 0);
             this.leaderboard.Controls.Add(this.teamNameLabel, 2, 0);
             this.leaderboard.Controls.Add(this.usernameLabel, 1, 0);
             this.leaderboard.Controls.Add(this.rankLabel, 0, 0);
             this.leaderboard.Controls.Add(this.label1, 0, 1);
+            this.leaderboard.Controls.Add(this.label2, 0, 9);
+            this.leaderboard.Controls.Add(this.label3, 0, 8);
+            this.leaderboard.Controls.Add(this.label4, 0, 7);
+            this.leaderboard.Controls.Add(this.label5, 0, 6);
+            this.leaderboard.Controls.Add(this.label6, 0, 5);
+            this.leaderboard.Controls.Add(this.label7, 0, 4);
+            this.leaderboard.Controls.Add(this.label8, 0, 3);
+            this.leaderboard.Controls.Add(this.label9, 0, 2);
             this.leaderboard.Location = new System.Drawing.Point(239, 169);
             this.leaderboard.Name = "leaderboard";
             this.leaderboard.RowCount = 11;
@@ -132,6 +150,87 @@ namespace FiveAsideUI
             this.label1.TabIndex = 4;
             this.label1.Text = "1";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(4, 496);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(27, 32);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "9";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(4, 441);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(27, 32);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "8";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(4, 386);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(27, 32);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "7";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(4, 331);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(27, 32);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "6";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(4, 276);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(27, 32);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "5";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(4, 221);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(27, 32);
+            this.label7.TabIndex = 10;
+            this.label7.Text = "4";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(4, 166);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(27, 32);
+            this.label8.TabIndex = 11;
+            this.label8.Text = "3";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(4, 111);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(27, 32);
+            this.label9.TabIndex = 12;
+            this.label9.Text = "2";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(4, 551);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(40, 32);
+            this.label10.TabIndex = 13;
+            this.label10.Text = "10";
+            // 
             // Leaderboards
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
@@ -159,5 +258,14 @@ namespace FiveAsideUI
         private System.Windows.Forms.Label rankLabel;
         private System.Windows.Forms.Label avgFinishLabel;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
     }
 }
