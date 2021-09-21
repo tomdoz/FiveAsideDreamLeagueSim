@@ -14,5 +14,11 @@ namespace FiveAsideUI
         {
             InitializeComponent();
         }
+
+        public void LoadTeams()
+        {
+            //need to add the proper hiding and showing settings for labels saying which team is home and away
+            //need to add the loading of team names to the labels and proper iteration through the teams from CPU
+        }
     }
 }
