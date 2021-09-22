@@ -37,6 +37,11 @@ namespace FiveAsideUI
             this.cpuTeamLabel = new System.Windows.Forms.Label();
             this.rightHome = new System.Windows.Forms.Label();
             this.rightAway = new System.Windows.Forms.Label();
+            this.userScoreLabel = new System.Windows.Forms.Label();
+            this.cpuScoreLabel = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.TimerLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -123,6 +128,66 @@ namespace FiveAsideUI
             this.rightAway.TabIndex = 6;
             this.rightAway.Text = "(A)";
             // 
+            // userScoreLabel
+            // 
+            this.userScoreLabel.AutoSize = true;
+            this.userScoreLabel.BackColor = System.Drawing.Color.Transparent;
+            this.userScoreLabel.Font = new System.Drawing.Font("Segoe UI Black", 120F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.userScoreLabel.ForeColor = System.Drawing.Color.White;
+            this.userScoreLabel.Location = new System.Drawing.Point(136, 305);
+            this.userScoreLabel.Name = "userScoreLabel";
+            this.userScoreLabel.Size = new System.Drawing.Size(370, 425);
+            this.userScoreLabel.TabIndex = 7;
+            this.userScoreLabel.Text = "0";
+            // 
+            // cpuScoreLabel
+            // 
+            this.cpuScoreLabel.AutoSize = true;
+            this.cpuScoreLabel.BackColor = System.Drawing.Color.Transparent;
+            this.cpuScoreLabel.Font = new System.Drawing.Font("Segoe UI Black", 120F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.cpuScoreLabel.ForeColor = System.Drawing.Color.White;
+            this.cpuScoreLabel.Location = new System.Drawing.Point(474, 305);
+            this.cpuScoreLabel.Name = "cpuScoreLabel";
+            this.cpuScoreLabel.Size = new System.Drawing.Size(370, 425);
+            this.cpuScoreLabel.TabIndex = 8;
+            this.cpuScoreLabel.Text = "0";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Black", 80F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(382, 394);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(187, 283);
+            this.label2.TabIndex = 9;
+            this.label2.Text = ":";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Black", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(986, 394);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(435, 318);
+            this.label3.TabIndex = 10;
+            this.label3.Text = "Match\r\nClock:";
+            // 
+            // TimerLabel
+            // 
+            this.TimerLabel.AutoSize = true;
+            this.TimerLabel.BackColor = System.Drawing.Color.Transparent;
+            this.TimerLabel.Font = new System.Drawing.Font("Segoe UI Black", 120F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.TimerLabel.ForeColor = System.Drawing.Color.White;
+            this.TimerLabel.Location = new System.Drawing.Point(1357, 322);
+            this.TimerLabel.Name = "TimerLabel";
+            this.TimerLabel.Size = new System.Drawing.Size(480, 425);
+            this.TimerLabel.TabIndex = 11;
+            this.TimerLabel.Text = "0\'";
+            // 
             // MatchViewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
@@ -130,6 +195,8 @@ namespace FiveAsideUI
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1894, 1009);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.cpuTeamLabel);
             this.Controls.Add(this.rightAway);
             this.Controls.Add(this.team1Name);
@@ -137,8 +204,11 @@ namespace FiveAsideUI
             this.Controls.Add(this.leftHome);
             this.Controls.Add(this.leftAway);
             this.Controls.Add(this.rightHome);
+            this.Controls.Add(this.userScoreLabel);
+            this.Controls.Add(this.cpuScoreLabel);
+            this.Controls.Add(this.TimerLabel);
             this.Name = "MatchViewer";
-            this.Text = "MatchViewer";
+            this.Text = "Match Viewer";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -154,5 +224,10 @@ namespace FiveAsideUI
         private System.Windows.Forms.Label cpuTeamLabel;
         private System.Windows.Forms.Label rightHome;
         private System.Windows.Forms.Label rightAway;
+        private System.Windows.Forms.Label userScoreLabel;
+        private System.Windows.Forms.Label cpuScoreLabel;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label TimerLabel;
     }
 }
