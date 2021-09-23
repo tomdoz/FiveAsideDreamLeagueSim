@@ -44,23 +44,33 @@ namespace FiveAsideUI
         {
             Random random = new Random();
             int rollUserProbabilities = random.Next(0, 100);
-            int rollCPUProbabilitis = random.Next(0, 100);
+            int rollCPUProbabilities = random.Next(0, 100);
             if (rollUserProbabilities <= userScoreChance)
             {
                 UserScoreGoal();   
+            }
+            if (rollCPUProbabilities <= cpuScoreChance)
+            {
+                CPUScoreGoal();
             }
         }
 
         public void UserScoreGoal()
         {
+            userScoreLabel.Text = Convert.ToString(Convert.ToInt32(userScoreLabel.Text) + 1);
             string userScoreMsg = "Your team has scored. The score is now " + userScoreLabel.Text + " - " + cpuScoreLabel.Text;
             string userScoreMsgTitle = "GOAL!";
             MessageBox.Show(userScoreMsg, userScoreMsgTitle);
-
-
-
-            
         }
 
+        public void CPUScoreGoal()
+        {
+            cpuScoreLabel.Text = Convert.ToString(Convert.ToInt32(cpuScoreLabel.Text) + 1);
+            string cpuScoreMsg = "Your team has scored. The score is now " + userScoreLabel.Text + " - " + cpuScoreLabel.Text;
+            string cpuScoreMsgTitle = "GOAL!";
+            MessageBox.Show(cpuScoreMsg, cpuScoreMsgTitle);
+        }
+
+        
     }
 }
