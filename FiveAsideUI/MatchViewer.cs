@@ -10,6 +10,109 @@ namespace FiveAsideUI
 {
     public partial class MatchViewer : Form
     {
+        //variables for individual player attributes (user team);
+        
+        //captain attribute variables
+        public int p1ShootingVal = 0;
+        public int p1DribblingVal = 0;
+        public int p1PaceVal = 0;
+        public int p1PhysicalVal = 0;
+        public int p1ReliableVal = 0;
+        public int p1TackleVal = 0;
+        public int p1AggroVal = 0;
+        //player 2 attribute variables
+        public int p2ShootingVal = 0;
+        public int p2DribblingVal = 0;
+        public int p2PaceVal = 0;
+        public int p2PhysicalVal = 0;
+        public int p2ReliableVal = 0;
+        public int p2TackleVal = 0;
+        public int p2AggroVal = 0;
+        //player 3 attribute variables;
+        public int p3ShootingVal = 0;
+        public int p3DribblingVal = 0;
+        public int p3PaceVal = 0;
+        public int p3PhysicalVal = 0;
+        public int p3ReliableVal = 0;
+        public int p3TackleVal = 0;
+        public int p3AggroVal = 0;
+        //player 4 attribute variables;
+        public int p4ShootingVal = 0;
+        public int p4DribblingVal = 0;
+        public int p4PaceVal = 0;
+        public int p4PhysicalVal = 0;
+        public int p4ReliableVal = 0;
+        public int p4TackleVal = 0;
+        public int p4AggroVal = 0;
+        //player 5 attribute variables;
+        public int p5ShootingVal = 0;
+        public int p5DribblingVal = 0;
+        public int p5PaceVal = 0;
+        public int p5PhysicalVal = 0;
+        public int p5ReliableVal = 0;
+        public int p5TackleVal = 0;
+        public int p5AggroVal = 0;
+        //substitute attribute variables
+        public int subShootingVal = 0;
+        public int subDribblingVal = 0;
+        public int subPaceVal = 0;
+        public int subPhysicalVal = 0;
+        public int subReliableVal = 0;
+        public int subTackleVal = 0;
+        public int subAggroVal = 0;
+
+        //variables for individual player attributes (user team);
+
+        //captain attribute variables
+        public int cpuP1ShootingVal = 0;
+        public int cpuP1DribblingVal = 0;
+        public int cpuP1PaceVal = 0;
+        public int cpuP1PhysicalVal = 0;
+        public int cpuP1ReliableVal = 0;
+        public int cpuP1TackleVal = 0;
+        public int cpuP1AggroVal = 0;
+        //player 2 attribute variables
+        public int cpuP2ShootingVal = 0;
+        public int cpuP2DribblingVal = 0;
+        public int cpuP2PaceVal = 0;
+        public int cpuP2PhysicalVal = 0;
+        public int cpuP2ReliableVal = 0;
+        public int cpuP2TackleVal = 0;
+        public int cpuP2AggroVal = 0;
+        //player 3 attribute variables;
+        public int cpuP3ShootingVal = 0;
+        public int cpuP3DribblingVal = 0;
+        public int cpuP3PaceVal = 0;
+        public int cpuP3PhysicalVal = 0;
+        public int cpuP3ReliableVal = 0;
+        public int cpuP3TackleVal = 0;
+        public int cpuP3AggroVal = 0;
+        //player 4 attribute variables;
+        public int cpuP4ShootingVal = 0;
+        public int cpuP4DribblingVal = 0;
+        public int cpuP4PaceVal = 0;
+        public int cpuP4PhysicalVal = 0;
+        public int cpuP4ReliableVal = 0;
+        public int cpuP4TackleVal = 0;
+        public int cpuP4AggroVal = 0;
+        //player 5 attRibute variables;
+        public int cpuP5ShootingVal = 0;
+        public int cpuP5DribblingVal = 0;
+        public int cpuP5PaceVal = 0;
+        public int cpuP5PhysicalVal = 0;
+        public int cpuP5ReliableVal = 0;
+        public int cpuP5TackleVal = 0;
+        public int cpuP5AggroVal = 0;
+        //substitute attribute variables
+        public int cpuSubShootingVal = 0;
+        public int cpuSubDribblingVal = 0;
+        public int cpuSubPaceVal = 0;
+        public int cpuSubPhysicalVal = 0;
+        public int cpuSubReliableVal = 0;
+        public int cpuSubTackleVal = 0;
+        public int cpuSubAggroVal = 0;
+
+        //variables for averages of each attribute for each stat for user and cpu teams
         public int userSHO;
         public int userDRI;
         public int userPAC;
@@ -24,7 +127,7 @@ namespace FiveAsideUI
         public int cpuREL;
         public int cpuTAC;
         public int cpuAGG;
-        public int userScoreChance;
+        public int userScoreChance = 10;
         public int cpuScoreChance = 8;
         public bool matchEnded = false;
         public int gameClockIncrementer = 0;
@@ -48,10 +151,28 @@ namespace FiveAsideUI
                 rightAway.Hide();
                 rightHome.Show();
             }
+            //TeamAvgStats();
            //userScoreChance = UserChanceGenerator();
            //cpuScoreChance = CPUChanceGenerator();
         }
 
+        public void TeamAvgStats()
+        {
+            userSHO = (p1ShootingVal + p2ShootingVal + p3ShootingVal + p4ShootingVal + p5ShootingVal) / 5;
+            userDRI = (p1DribblingVal + p2DribblingVal + p3DribblingVal + p4DribblingVal + p5DribblingVal) / 5;
+            userPAC = (p1PaceVal + p2PaceVal + p3PaceVal + p4PaceVal + p5PaceVal) / 5;
+            userPHY = (p1PhysicalVal + p2PhysicalVal + p3PhysicalVal + p4PhysicalVal + p5PhysicalVal) / 5;
+            userREL = (p1ReliableVal + p2ReliableVal + p3ReliableVal + p4ReliableVal + p5ReliableVal) / 5;
+            userTAC = (p1TackleVal + p2TackleVal + p3TackleVal + p4TackleVal + p5TackleVal) / 5;
+            userAGG = (p1AggroVal + p2AggroVal + p3AggroVal + p4AggroVal + p5AggroVal) / 5;
+            cpuSHO = (cpuP1ShootingVal + cpuP2ShootingVal + cpuP3ShootingVal + cpuP4ShootingVal + cpuP5ShootingVal) / 5;
+            cpuDRI = (cpuP1DribblingVal + cpuP2DribblingVal + cpuP3DribblingVal + cpuP4DribblingVal + cpuP5DribblingVal) / 5;
+            cpuPAC = (cpuP1PaceVal + cpuP2PaceVal + cpuP3PaceVal + cpuP4PaceVal + cpuP5PaceVal) / 5;
+            cpuPHY = (cpuP1PhysicalVal + cpuP2PhysicalVal + cpuP3PhysicalVal + cpuP4PhysicalVal + cpuP5PhysicalVal) / 5;
+            cpuREL = (cpuP1ReliableVal + cpuP2ReliableVal + cpuP3ReliableVal + cpuP4ReliableVal + cpuP5ReliableVal) / 5;
+            cpuTAC = (cpuP1TackleVal + cpuP2TackleVal + cpuP3TackleVal + cpuP4TackleVal + cpuP5TackleVal) / 5;
+            cpuAGG = (cpuP1AggroVal + cpuP2AggroVal + cpuP3AggroVal + cpuP4AggroVal + cpuP5AggroVal) / 5;
+        }
         public int UserChanceGenerator()
         {
             userScoreChance = Convert.ToInt32(((0.6 * userSHO) + (0.5 * userPAC) + (0.3 * userDRI) + (0.1 * userPHY)) / 4); //loading the user attacking attribute stats into weighted average equation
