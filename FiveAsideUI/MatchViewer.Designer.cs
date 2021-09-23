@@ -52,7 +52,7 @@ namespace FiveAsideUI
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe UI Black", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(362, 14);
+            this.label1.Location = new System.Drawing.Point(254, 9);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(292, 54);
@@ -65,7 +65,7 @@ namespace FiveAsideUI
             this.team1Name.BackColor = System.Drawing.Color.Transparent;
             this.team1Name.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.team1Name.ForeColor = System.Drawing.Color.White;
-            this.team1Name.Location = new System.Drawing.Point(407, 71);
+            this.team1Name.Location = new System.Drawing.Point(296, 71);
             this.team1Name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.team1Name.Name = "team1Name";
             this.team1Name.Size = new System.Drawing.Size(93, 21);
@@ -78,7 +78,7 @@ namespace FiveAsideUI
             this.leftHome.BackColor = System.Drawing.Color.Transparent;
             this.leftHome.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.leftHome.ForeColor = System.Drawing.Color.White;
-            this.leftHome.Location = new System.Drawing.Point(376, 71);
+            this.leftHome.Location = new System.Drawing.Point(267, 71);
             this.leftHome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.leftHome.Name = "leftHome";
             this.leftHome.Size = new System.Drawing.Size(37, 21);
@@ -91,12 +91,13 @@ namespace FiveAsideUI
             this.leftAway.BackColor = System.Drawing.Color.Transparent;
             this.leftAway.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.leftAway.ForeColor = System.Drawing.Color.White;
-            this.leftAway.Location = new System.Drawing.Point(376, 71);
+            this.leftAway.Location = new System.Drawing.Point(267, 71);
             this.leftAway.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.leftAway.Name = "leftAway";
             this.leftAway.Size = new System.Drawing.Size(36, 21);
             this.leftAway.TabIndex = 3;
             this.leftAway.Text = "(A)";
+            this.leftAway.Visible = false;
             // 
             // cpuTeamLabel
             // 
@@ -104,7 +105,7 @@ namespace FiveAsideUI
             this.cpuTeamLabel.BackColor = System.Drawing.Color.Transparent;
             this.cpuTeamLabel.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.cpuTeamLabel.ForeColor = System.Drawing.Color.White;
-            this.cpuTeamLabel.Location = new System.Drawing.Point(549, 71);
+            this.cpuTeamLabel.Location = new System.Drawing.Point(393, 71);
             this.cpuTeamLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.cpuTeamLabel.Name = "cpuTeamLabel";
             this.cpuTeamLabel.Size = new System.Drawing.Size(89, 21);
@@ -117,12 +118,13 @@ namespace FiveAsideUI
             this.rightHome.BackColor = System.Drawing.Color.Transparent;
             this.rightHome.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.rightHome.ForeColor = System.Drawing.Color.White;
-            this.rightHome.Location = new System.Drawing.Point(519, 71);
+            this.rightHome.Location = new System.Drawing.Point(478, 71);
             this.rightHome.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.rightHome.Name = "rightHome";
             this.rightHome.Size = new System.Drawing.Size(37, 21);
             this.rightHome.TabIndex = 5;
             this.rightHome.Text = "(H)";
+            this.rightHome.Visible = false;
             // 
             // rightAway
             // 
@@ -130,7 +132,7 @@ namespace FiveAsideUI
             this.rightAway.BackColor = System.Drawing.Color.Transparent;
             this.rightAway.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.rightAway.ForeColor = System.Drawing.Color.White;
-            this.rightAway.Location = new System.Drawing.Point(519, 71);
+            this.rightAway.Location = new System.Drawing.Point(479, 71);
             this.rightAway.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.rightAway.Name = "rightAway";
             this.rightAway.Size = new System.Drawing.Size(36, 21);
@@ -143,7 +145,7 @@ namespace FiveAsideUI
             this.userScoreLabel.BackColor = System.Drawing.Color.Transparent;
             this.userScoreLabel.Font = new System.Drawing.Font("Segoe UI Black", 120F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.userScoreLabel.ForeColor = System.Drawing.Color.White;
-            this.userScoreLabel.Location = new System.Drawing.Point(73, 143);
+            this.userScoreLabel.Location = new System.Drawing.Point(0, 143);
             this.userScoreLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.userScoreLabel.Name = "userScoreLabel";
             this.userScoreLabel.Size = new System.Drawing.Size(185, 212);
@@ -156,7 +158,7 @@ namespace FiveAsideUI
             this.cpuScoreLabel.BackColor = System.Drawing.Color.Transparent;
             this.cpuScoreLabel.Font = new System.Drawing.Font("Segoe UI Black", 120F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.cpuScoreLabel.ForeColor = System.Drawing.Color.White;
-            this.cpuScoreLabel.Location = new System.Drawing.Point(255, 143);
+            this.cpuScoreLabel.Location = new System.Drawing.Point(162, 143);
             this.cpuScoreLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.cpuScoreLabel.Name = "cpuScoreLabel";
             this.cpuScoreLabel.Size = new System.Drawing.Size(185, 212);
@@ -167,12 +169,12 @@ namespace FiveAsideUI
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Black", 80F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Segoe UI Black", 60F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(206, 185);
+            this.label2.Location = new System.Drawing.Point(131, 204);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(94, 142);
+            this.label2.Size = new System.Drawing.Size(71, 106);
             this.label2.TabIndex = 9;
             this.label2.Text = ":";
             // 
@@ -182,7 +184,7 @@ namespace FiveAsideUI
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI Black", 45F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(531, 185);
+            this.label3.Location = new System.Drawing.Point(342, 179);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(220, 162);
@@ -195,7 +197,7 @@ namespace FiveAsideUI
             this.TimerLabel.BackColor = System.Drawing.Color.Transparent;
             this.TimerLabel.Font = new System.Drawing.Font("Segoe UI Black", 120F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.TimerLabel.ForeColor = System.Drawing.Color.White;
-            this.TimerLabel.Location = new System.Drawing.Point(731, 151);
+            this.TimerLabel.Location = new System.Drawing.Point(519, 143);
             this.TimerLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.TimerLabel.Name = "TimerLabel";
             this.TimerLabel.Size = new System.Drawing.Size(240, 212);
@@ -213,23 +215,22 @@ namespace FiveAsideUI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1370, 749);
+            this.ClientSize = new System.Drawing.Size(784, 411);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.cpuTeamLabel);
-            this.Controls.Add(this.rightAway);
-            this.Controls.Add(this.team1Name);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.leftHome);
-            this.Controls.Add(this.leftAway);
-            this.Controls.Add(this.rightHome);
-            this.Controls.Add(this.userScoreLabel);
             this.Controls.Add(this.cpuScoreLabel);
+            this.Controls.Add(this.team1Name);
+            this.Controls.Add(this.cpuTeamLabel);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.userScoreLabel);
             this.Controls.Add(this.TimerLabel);
+            this.Controls.Add(this.leftHome);
+            this.Controls.Add(this.rightAway);
+            this.Controls.Add(this.rightHome);
+            this.Controls.Add(this.leftAway);
             this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Name = "MatchViewer";
             this.Text = "Match Viewer";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ResumeLayout(false);
             this.PerformLayout();
 

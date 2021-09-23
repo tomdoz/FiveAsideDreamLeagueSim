@@ -24,10 +24,11 @@ namespace FiveAsideUI
         public int cpuREL;
         public int cpuTAC;
         public int cpuAGG;
-        public int userScoreChance = 10;
-        public int cpuScoreChance= 8;
+        public int userScoreChance;
+        public int cpuScoreChance = 8;
         public bool matchEnded = false;
         public int gameClockIncrementer = 0;
+        public bool userAtHome = true;
 
         public MatchViewer()
         {
@@ -38,14 +39,31 @@ namespace FiveAsideUI
 
         public void LoadTeams()
         {
-            //need to add the proper hiding and showing settings for labels saying which team is home and away
             //need to add the loading of team names to the labels and proper iteration through the teams from CPU
+            //Still need to pull who is home and who is away from fixture table to then control this variable
+            if(userAtHome == false)
+            {
+                leftHome.Hide();
+                leftAway.Show();
+                rightAway.Hide();
+                rightHome.Show();
+            }
+           //userScoreChance = UserChanceGenerator();
+           //cpuScoreChance = CPUChanceGenerator();
         }
 
         public int UserChanceGenerator()
         {
-          //  userScoreChance = ((0.6 * userSHO) + (0.5 * userPAC) + (0.3 * userDRI) + (0.1 * userPHY)) / 400; 
+            userScoreChance = Convert.ToInt32(((0.6 * userSHO) + (0.5 * userPAC) + (0.3 * userDRI) + (0.1 * userPHY)) / 4); //loading the user attacking attribute stats into weighted average equation
+            userScoreChance = userScoreChance - Convert.ToInt32(((0.5 * cpuTAC) + (0.4 * cpuPHY) + (0.2 * cpuAGG) + (0.2 * cpuREL)) / 4); //weighted average then found using CPU defensive attribute stats
             return userScoreChance;
+        }
+
+        public int CPUChanceGenerator()
+        {
+            cpuScoreChance = Convert.ToInt32(((0.6 * cpuSHO) + (0.5 * cpuPAC) + (0.3 * cpuDRI) + (0.1 * cpuPHY)) / 4); //loading the CPU attacking attribute stats into weighted average equation
+            cpuScoreChance = cpuScoreChance - Convert.ToInt32(((0.5 * userTAC) + (0.4 * userPHY) + (0.2 * userAGG) + (0.2 * userREL)) / 4); //weighted average then found using user defensive attribute stats
+            return cpuScoreChance;
         }
 
 
