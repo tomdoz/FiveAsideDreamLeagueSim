@@ -29,6 +29,7 @@ namespace FiveAsideUI
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MatchViewer));
             this.label1 = new System.Windows.Forms.Label();
             this.team1Name = new System.Windows.Forms.Label();
@@ -42,6 +43,7 @@ namespace FiveAsideUI
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.TimerLabel = new System.Windows.Forms.Label();
+            this.matchTimer = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // label1
@@ -200,6 +202,10 @@ namespace FiveAsideUI
             this.TimerLabel.TabIndex = 11;
             this.TimerLabel.Text = "0\'";
             // 
+            // matchTimer
+            // 
+            this.matchTimer.Interval = 30000;
+            // 
             // MatchViewer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -242,5 +248,6 @@ namespace FiveAsideUI
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label TimerLabel;
+        private System.Windows.Forms.Timer matchTimer;
     }
 }
