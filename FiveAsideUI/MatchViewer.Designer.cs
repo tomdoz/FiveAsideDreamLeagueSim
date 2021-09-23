@@ -204,7 +204,8 @@ namespace FiveAsideUI
             // 
             // matchTimer
             // 
-            this.matchTimer.Interval = 30000;
+            this.matchTimer.Interval = 7000;
+            this.matchTimer.Tick += new System.EventHandler(this.matchTimer_Tick);
             // 
             // MatchViewer
             // 

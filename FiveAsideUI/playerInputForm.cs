@@ -470,5 +470,10 @@ namespace FiveAsideUI
                 MessageBox.Show(message, title);
             }
         }
+
+        private void playerInputForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
