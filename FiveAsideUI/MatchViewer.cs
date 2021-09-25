@@ -13,104 +13,104 @@ namespace FiveAsideUI
         //variables for individual player attributes (user team);
         
         //captain attribute variables
-        public int p1ShootingVal = 0;
-        public int p1DribblingVal = 0;
-        public int p1PaceVal = 0;
-        public int p1PhysicalVal = 0;
-        public int p1ReliableVal = 0;
-        public int p1TackleVal = 0;
-        public int p1AggroVal = 0;
+        public int p1ShootingVal = 80;
+        public int p1DribblingVal = 80;
+        public int p1PaceVal = 80;
+        public int p1PhysicalVal = 80;
+        public int p1ReliableVal = 80;
+        public int p1TackleVal = 80;
+        public int p1AggroVal = 80;
         //player 2 attribute variables
-        public int p2ShootingVal = 0;
-        public int p2DribblingVal = 0;
-        public int p2PaceVal = 0;
-        public int p2PhysicalVal = 0;
-        public int p2ReliableVal = 0;
-        public int p2TackleVal = 0;
-        public int p2AggroVal = 0;
+        public int p2ShootingVal = 80;
+        public int p2DribblingVal = 80;
+        public int p2PaceVal = 80;
+        public int p2PhysicalVal = 80;
+        public int p2ReliableVal = 80;
+        public int p2TackleVal = 80;
+        public int p2AggroVal = 80;
         //player 3 attribute variables;
-        public int p3ShootingVal = 0;
-        public int p3DribblingVal = 0;
-        public int p3PaceVal = 0;
-        public int p3PhysicalVal = 0;
-        public int p3ReliableVal = 0;
-        public int p3TackleVal = 0;
-        public int p3AggroVal = 0;
+        public int p3ShootingVal = 80;
+        public int p3DribblingVal = 80;
+        public int p3PaceVal = 80;
+        public int p3PhysicalVal = 80;
+        public int p3ReliableVal = 80;
+        public int p3TackleVal = 80;
+        public int p3AggroVal = 80;
         //player 4 attribute variables;
-        public int p4ShootingVal = 0;
-        public int p4DribblingVal = 0;
-        public int p4PaceVal = 0;
-        public int p4PhysicalVal = 0;
-        public int p4ReliableVal = 0;
-        public int p4TackleVal = 0;
-        public int p4AggroVal = 0;
+        public int p4ShootingVal = 80;
+        public int p4DribblingVal = 80;
+        public int p4PaceVal = 80;
+        public int p4PhysicalVal = 80;
+        public int p4ReliableVal = 80;
+        public int p4TackleVal = 80;
+        public int p4AggroVal = 80;
         //player 5 attribute variables;
-        public int p5ShootingVal = 0;
-        public int p5DribblingVal = 0;
-        public int p5PaceVal = 0;
-        public int p5PhysicalVal = 0;
-        public int p5ReliableVal = 0;
-        public int p5TackleVal = 0;
-        public int p5AggroVal = 0;
+        public int p5ShootingVal = 80;
+        public int p5DribblingVal = 80;
+        public int p5PaceVal = 80;
+        public int p5PhysicalVal = 80;
+        public int p5ReliableVal = 80;
+        public int p5TackleVal = 80;
+        public int p5AggroVal = 80;
         //substitute attribute variables
-        public int subShootingVal = 0;
-        public int subDribblingVal = 0;
-        public int subPaceVal = 0;
-        public int subPhysicalVal = 0;
-        public int subReliableVal = 0;
-        public int subTackleVal = 0;
-        public int subAggroVal = 0;
+        public int subShootingVal = 80;
+        public int subDribblingVal = 80;
+        public int subPaceVal = 80;
+        public int subPhysicalVal = 80;
+        public int subReliableVal = 80;
+        public int subTackleVal = 80;
+        public int subAggroVal = 80;
 
         //variables for individual player attributes (user team);
 
         //captain attribute variables
-        public int cpuP1ShootingVal = 0;
-        public int cpuP1DribblingVal = 0;
-        public int cpuP1PaceVal = 0;
-        public int cpuP1PhysicalVal = 0;
-        public int cpuP1ReliableVal = 0;
-        public int cpuP1TackleVal = 0;
-        public int cpuP1AggroVal = 0;
+        public int cpuP1ShootingVal = 80;
+        public int cpuP1DribblingVal = 80;
+        public int cpuP1PaceVal = 80;
+        public int cpuP1PhysicalVal = 80;
+        public int cpuP1ReliableVal = 80;
+        public int cpuP1TackleVal = 80;
+        public int cpuP1AggroVal = 80;
         //player 2 attribute variables
-        public int cpuP2ShootingVal = 0;
-        public int cpuP2DribblingVal = 0;
-        public int cpuP2PaceVal = 0;
-        public int cpuP2PhysicalVal = 0;
-        public int cpuP2ReliableVal = 0;
-        public int cpuP2TackleVal = 0;
-        public int cpuP2AggroVal = 0;
+        public int cpuP2ShootingVal = 80;
+        public int cpuP2DribblingVal = 80;
+        public int cpuP2PaceVal = 80;
+        public int cpuP2PhysicalVal = 80;
+        public int cpuP2ReliableVal = 80;
+        public int cpuP2TackleVal = 80;
+        public int cpuP2AggroVal = 80;
         //player 3 attribute variables;
-        public int cpuP3ShootingVal = 0;
-        public int cpuP3DribblingVal = 0;
-        public int cpuP3PaceVal = 0;
-        public int cpuP3PhysicalVal = 0;
-        public int cpuP3ReliableVal = 0;
-        public int cpuP3TackleVal = 0;
-        public int cpuP3AggroVal = 0;
+        public int cpuP3ShootingVal = 80;
+        public int cpuP3DribblingVal = 80;
+        public int cpuP3PaceVal = 80;
+        public int cpuP3PhysicalVal = 80;
+        public int cpuP3ReliableVal = 80;
+        public int cpuP3TackleVal = 80;
+        public int cpuP3AggroVal = 80;
         //player 4 attribute variables;
-        public int cpuP4ShootingVal = 0;
-        public int cpuP4DribblingVal = 0;
-        public int cpuP4PaceVal = 0;
-        public int cpuP4PhysicalVal = 0;
-        public int cpuP4ReliableVal = 0;
-        public int cpuP4TackleVal = 0;
-        public int cpuP4AggroVal = 0;
+        public int cpuP4ShootingVal = 80;
+        public int cpuP4DribblingVal = 80;
+        public int cpuP4PaceVal = 80;
+        public int cpuP4PhysicalVal = 80;
+        public int cpuP4ReliableVal = 80;
+        public int cpuP4TackleVal = 80;
+        public int cpuP4AggroVal = 80;
         //player 5 attRibute variables;
-        public int cpuP5ShootingVal = 0;
-        public int cpuP5DribblingVal = 0;
-        public int cpuP5PaceVal = 0;
-        public int cpuP5PhysicalVal = 0;
-        public int cpuP5ReliableVal = 0;
-        public int cpuP5TackleVal = 0;
-        public int cpuP5AggroVal = 0;
+        public int cpuP5ShootingVal = 80;
+        public int cpuP5DribblingVal = 80;
+        public int cpuP5PaceVal = 80;
+        public int cpuP5PhysicalVal = 80;
+        public int cpuP5ReliableVal = 80;
+        public int cpuP5TackleVal = 80;
+        public int cpuP5AggroVal = 80;
         //substitute attribute variables
-        public int cpuSubShootingVal = 0;
-        public int cpuSubDribblingVal = 0;
-        public int cpuSubPaceVal = 0;
-        public int cpuSubPhysicalVal = 0;
-        public int cpuSubReliableVal = 0;
-        public int cpuSubTackleVal = 0;
-        public int cpuSubAggroVal = 0;
+        public int cpuSubShootingVal = 80;
+        public int cpuSubDribblingVal = 80;
+        public int cpuSubPaceVal = 80;
+        public int cpuSubPhysicalVal = 80;
+        public int cpuSubReliableVal = 80;
+        public int cpuSubTackleVal = 80;
+        public int cpuSubAggroVal = 80;
 
         //variables for averages of each attribute for each stat for user and cpu teams
         public int userSHO;
@@ -127,8 +127,8 @@ namespace FiveAsideUI
         public int cpuREL;
         public int cpuTAC;
         public int cpuAGG;
-        public int userScoreChance = 10;
-        public int cpuScoreChance = 8;
+        public int userScoreChance;
+        public int cpuScoreChance;
         public bool matchEnded = false;
         public int gameClockIncrementer = 0;
         public bool userAtHome = true;
@@ -151,9 +151,9 @@ namespace FiveAsideUI
                 rightAway.Hide();
                 rightHome.Show();
             }
-            //TeamAvgStats();
-           //userScoreChance = UserChanceGenerator();
-           //cpuScoreChance = CPUChanceGenerator();
+            TeamAvgStats();
+            userScoreChance = UserChanceGenerator();
+            cpuScoreChance = CPUChanceGenerator();
         }
 
         public void TeamAvgStats()
@@ -177,6 +177,7 @@ namespace FiveAsideUI
         {
             userScoreChance = Convert.ToInt32(((0.6 * userSHO) + (0.5 * userPAC) + (0.3 * userDRI) + (0.1 * userPHY)) / 4); //loading the user attacking attribute stats into weighted average equation
             userScoreChance = userScoreChance - Convert.ToInt32(((0.5 * cpuTAC) + (0.4 * cpuPHY) + (0.2 * cpuAGG) + (0.2 * cpuREL)) / 4); //weighted average then found using CPU defensive attribute stats
+            team1Name.Text = Convert.ToString(userScoreChance);
             return userScoreChance;
         }
 
@@ -184,6 +185,7 @@ namespace FiveAsideUI
         {
             cpuScoreChance = Convert.ToInt32(((0.6 * cpuSHO) + (0.5 * cpuPAC) + (0.3 * cpuDRI) + (0.1 * cpuPHY)) / 4); //loading the CPU attacking attribute stats into weighted average equation
             cpuScoreChance = cpuScoreChance - Convert.ToInt32(((0.5 * userTAC) + (0.4 * userPHY) + (0.2 * userAGG) + (0.2 * userREL)) / 4); //weighted average then found using user defensive attribute stats
+            cpuTeamLabel.Text = Convert.ToString(cpuScoreChance);
             return cpuScoreChance;
         }
 

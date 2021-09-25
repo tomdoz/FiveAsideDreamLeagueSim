@@ -197,7 +197,7 @@ namespace FiveAsideUI
             this.TimerLabel.BackColor = System.Drawing.Color.Transparent;
             this.TimerLabel.Font = new System.Drawing.Font("Segoe UI Black", 120F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.TimerLabel.ForeColor = System.Drawing.Color.White;
-            this.TimerLabel.Location = new System.Drawing.Point(964, 305);
+            this.TimerLabel.Location = new System.Drawing.Point(988, 305);
             this.TimerLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.TimerLabel.Name = "TimerLabel";
             this.TimerLabel.Size = new System.Drawing.Size(480, 425);
@@ -228,6 +228,7 @@ namespace FiveAsideUI
             this.Controls.Add(this.rightAway);
             this.Controls.Add(this.rightHome);
             this.Controls.Add(this.leftAway);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 2, 4, 2);
             this.Name = "MatchViewer";
             this.Text = "Match Viewer";
