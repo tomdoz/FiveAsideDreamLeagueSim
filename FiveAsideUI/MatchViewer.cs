@@ -209,7 +209,7 @@ namespace FiveAsideUI
         {
             userScoreLabel.Text = Convert.ToString(Convert.ToInt32(userScoreLabel.Text) + 1);
             string userScoreMsg = "Your team has scored. The score is now " + userScoreLabel.Text + " - " + cpuScoreLabel.Text;
-            string userScoreMsgTitle = TimerLabel + " GOAL!";
+            string userScoreMsgTitle = TimerLabel.Text + " GOAL!";
             matchTimer.Stop();
             MessageBox.Show(userScoreMsg, userScoreMsgTitle);
             matchTimer.Start();
