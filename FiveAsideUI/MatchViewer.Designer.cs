@@ -145,7 +145,7 @@ namespace FiveAsideUI
             this.userScoreLabel.BackColor = System.Drawing.Color.Transparent;
             this.userScoreLabel.Font = new System.Drawing.Font("Segoe UI Black", 120F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.userScoreLabel.ForeColor = System.Drawing.Color.White;
-            this.userScoreLabel.Location = new System.Drawing.Point(0, 305);
+            this.userScoreLabel.Location = new System.Drawing.Point(-31, 305);
             this.userScoreLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.userScoreLabel.Name = "userScoreLabel";
             this.userScoreLabel.Size = new System.Drawing.Size(370, 425);

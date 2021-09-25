@@ -64,9 +64,9 @@ namespace FiveAsideUI
         //variables for individual player attributes (user team);
 
         //captain attribute variables
-        public int cpuP1ShootingVal = 90;
-        public int cpuP1DribblingVal = 90;
-        public int cpuP1PaceVal = 90;
+        public int cpuP1ShootingVal = 80;
+        public int cpuP1DribblingVal = 80;
+        public int cpuP1PaceVal = 80;
         public int cpuP1PhysicalVal = 80;
         public int cpuP1ReliableVal = 80;
         public int cpuP1TackleVal = 80;
@@ -173,6 +173,7 @@ namespace FiveAsideUI
             cpuTAC = (cpuP1TackleVal + cpuP2TackleVal + cpuP3TackleVal + cpuP4TackleVal + cpuP5TackleVal) / 5;
             cpuAGG = (cpuP1AggroVal + cpuP2AggroVal + cpuP3AggroVal + cpuP4AggroVal + cpuP5AggroVal) / 5;
         }
+
         public int UserChanceGenerator()
         {
             userScoreChance = Convert.ToInt32(((0.6 * userSHO) + (0.5 * userPAC) + (0.3 * userDRI) + (0.1 * userPHY)) / 4); //loading the user attacking attribute stats into weighted average equation
@@ -206,7 +207,6 @@ namespace FiveAsideUI
             cpuTeamLabel.Text = Convert.ToString(cpuScoreChance); //diagnostic purposes
             return cpuScoreChance;
         }
-
 
         public void ScoreGoalCheck()
         {
