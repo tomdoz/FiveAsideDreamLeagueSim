@@ -64,9 +64,9 @@ namespace FiveAsideUI
         //variables for individual player attributes (user team);
 
         //captain attribute variables
-        public int cpuP1ShootingVal = 80;
-        public int cpuP1DribblingVal = 80;
-        public int cpuP1PaceVal = 80;
+        public int cpuP1ShootingVal = 90;
+        public int cpuP1DribblingVal = 90;
+        public int cpuP1PaceVal = 90;
         public int cpuP1PhysicalVal = 80;
         public int cpuP1ReliableVal = 80;
         public int cpuP1TackleVal = 80;
@@ -177,7 +177,16 @@ namespace FiveAsideUI
         {
             userScoreChance = Convert.ToInt32(((0.6 * userSHO) + (0.5 * userPAC) + (0.3 * userDRI) + (0.1 * userPHY)) / 4); //loading the user attacking attribute stats into weighted average equation
             userScoreChance = userScoreChance - Convert.ToInt32(((0.5 * cpuTAC) + (0.4 * cpuPHY) + (0.2 * cpuAGG) + (0.2 * cpuREL)) / 4); //weighted average then found using CPU defensive attribute stats
-            team1Name.Text = Convert.ToString(userScoreChance);
+            if (userAtHome == true)
+            {
+                userScoreChance = Convert.ToInt32(Convert.ToDouble(userScoreChance) / 0.42857142857); //home adv. modifier = 3:7 ratio of A:H fans so we 3/7 as modifier
+            }
+            
+            else
+            {
+                userScoreChance = Convert.ToInt32(Convert.ToDouble(userScoreChance) / 2.33333333333); //away disadv. modifier = 7:3 ratio of H:A fans so we use 7/3 as modifier
+            }
+            team1Name.Text = Convert.ToString(userScoreChance); //diagnostic purposes
             return userScoreChance;
         }
 
@@ -185,7 +194,16 @@ namespace FiveAsideUI
         {
             cpuScoreChance = Convert.ToInt32(((0.6 * cpuSHO) + (0.5 * cpuPAC) + (0.3 * cpuDRI) + (0.1 * cpuPHY)) / 4); //loading the CPU attacking attribute stats into weighted average equation
             cpuScoreChance = cpuScoreChance - Convert.ToInt32(((0.5 * userTAC) + (0.4 * userPHY) + (0.2 * userAGG) + (0.2 * userREL)) / 4); //weighted average then found using user defensive attribute stats
-            cpuTeamLabel.Text = Convert.ToString(cpuScoreChance);
+            if (userAtHome == false)
+            {
+                cpuScoreChance = Convert.ToInt32(Convert.ToDouble(cpuScoreChance) / 0.42857142857); //home adv. modifier = 3:7 ratio of A:H fans so we 3/7 as modifier
+            }
+
+            else
+            {
+                cpuScoreChance = Convert.ToInt32(Convert.ToDouble(cpuScoreChance) / 2.33333333333); //away disadv. modifier = 7:3 ratio of H:A fans so we use 7/3 as modifier
+            }
+            cpuTeamLabel.Text = Convert.ToString(cpuScoreChance); //diagnostic purposes
             return cpuScoreChance;
         }
 
@@ -239,8 +257,7 @@ namespace FiveAsideUI
                     string matchEndMsgTitle = "Match Ended";
                     MessageBox.Show(matchEndMsg, matchEndMsgTitle);
                 }
-
-           }
+            }
         }
     }
 }
