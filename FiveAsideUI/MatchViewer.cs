@@ -187,7 +187,6 @@ namespace FiveAsideUI
             {
                 userScoreChance = Convert.ToInt32(Convert.ToDouble(userScoreChance) / 2.33333333333); //away disadv. modifier = 7:3 ratio of H:A fans so we use 7/3 as modifier
             }
-            team1Name.Text = Convert.ToString(userScoreChance); //diagnostic purposes
             return userScoreChance;
         }
 
@@ -204,7 +203,6 @@ namespace FiveAsideUI
             {
                 cpuScoreChance = Convert.ToInt32(Convert.ToDouble(cpuScoreChance) / 2.33333333333); //away disadv. modifier = 7:3 ratio of H:A fans so we use 7/3 as modifier
             }
-            cpuTeamLabel.Text = Convert.ToString(cpuScoreChance); //diagnostic purposes
             return cpuScoreChance;
         }
 
